@@ -25,8 +25,6 @@ The button bar in the upper side of the main window has four buttons:
 - *Stop*: stops the current :ref:`live_acquisition`.
 - *Cool*: stops the thermal cycle, but continue acquisition.
 
-.. _Live Acquisition: live.html
-
 Camera window
 -------------
 

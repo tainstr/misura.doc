@@ -19,6 +19,8 @@ Once the instrument is selected, the machine will start its set up.
 A "Pending Tasks" dialog will appear, showing some details about what is happening.
 This operation can take up to a couple of minute, depending on the instrument. Any interaction with the application is discouraged until when the dialog disappears.
 
+.. hint:: Time between instrument and client machines is kept synchronized. The user may periodically see a warning message upon connection, asking to re-synchronize times. If replied positively, the instrument will restart.
+
 Instrument Setup
 ++++++++++++++++
 
@@ -51,5 +53,10 @@ Start
 
 Once the specimen is correctly framed by the cameras, you can give a name to the test (in the *Status* tab) and start the test, by clicking the *Start* button.
 
+Delayed start
+
 [TBD]
+
+
+
 
