@@ -5,6 +5,8 @@ Heating Microscope HSM
 
 To open the HSM controls, you have to select HSM in the selection window that apperas after having logged in.
 
+Read :ref:`live_acquisition` for a general description of the acquisition window.
+
 HSM window is made of these main parts:
 
 - `Buttons bar`_

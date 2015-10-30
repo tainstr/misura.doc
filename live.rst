@@ -26,26 +26,7 @@ Instrument Setup
 
 The setup is slightly different, depending on the instrument.
 
-HSM
-___
-
-hsm setup description
-
-[TBD]
-
-Dilatometers
-____________
-
-horizontal and vertical description
-
-[TBD]
-
-Flex
-____
-
-flex descritpion
-
-[TBD]
+######## LINKS TO INSTRUMENTS
 
 
 Start
