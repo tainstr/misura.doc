@@ -73,9 +73,7 @@ To add a checkpoint, right click and select *Insert checkpoint*. A dialog will s
 
 The plot displayes checkpoints as dwell segments with few minutes duration, but their real duration cannot be forecasted because it depends from tolerance, timeout and furnace inertia.
 
-.. highlights:: 
-    **Example**
-    
+.. tip:: 
     A checkpoint with tolerance 3°C and timeout 60min is added after a row with setpoint temperature at 1000°C.
     
     When the execution reaches the checkpoint event, suppose the real temperature is 980°C. The checkpoint will cause the controller to keep the setpoint fixed at 1000°C, until the temperature raises above 997°C (1000°C - 3°C tolerance). If this condition is not satisfied in 60min timeout, the control will anyway pass to the next row.
@@ -126,9 +124,7 @@ A typical usage is to pre-heat a motorized furnace while it is opened, in order 
 To add a control transition, right click and select *Insert control transition*. A dialog will show up, and you'll be able to select to which of the thermocouples move the control and how fast.
 
 
-.. highlights::
-    **Example**
-    
+.. tip::
     We want to pre-heat the furnace to 1000°C while it is opened, then close it over the sample to flash-heat it. Then, we need to continue the thermal cycle up to 1400°C.
 
     We should:
@@ -146,9 +142,11 @@ To add a control transition, right click and select *Insert control transition*.
 Additional Control Options
 ---------------------------------------------
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Additional control options are displayed under the thermal cycle table. These can influence how the heating cycle and the test are stopped, plus initial and final furnace positions.
+
 Stop after thermal cycle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The *Stop after thermal cycle* flag defines wether the acquisition should stop or not, when the thermal cycle reaches its end. If not, the acquisition will have to be stopped manually.
 
 By clicking on the ``+`` button, two more sub-options are available. These are active only if the *Stop after thermal cycle* flag is checked, and are used to protract the acquisition further after thermal cycle end.
@@ -156,20 +154,29 @@ By clicking on the ``+`` button, two more sub-options are available. These are a
 - **Wait T smaller than**: After the cycle is stopped, the test will be stopped as well only when the temperature is smaller than the configured value. Leave zero to disable this behaviour.
 - **Wait minutes**: After the cycle is stopped, the test will be stopped as well after a certain amount of additional minutes. Leave zero to disable this behaviour.
 
-^^^^^^^^^^^^^^^^^^^^^^^
+
 Maximum test duration
 ^^^^^^^^^^^^^^^^^^^^^^^
+
 This option will interrupt the test when the total duration reaches the configured valued. The thermal cycle will be implicitly interrupted.
 
 This option will not *force* the test to have this duration: the test can end before this target duration if any other termination condition is met (end of thermal cycle, error condition, analytical condition).
 
 Leave zero to disable.
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Kiln position before start/after end
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+These two options allow to set a position of the furnace before and after the test. These options can be set either on *Closed*, *Opened* or *Unchanged*.
 
+The movement needed to comply with this position will not be recorded in the test result.
+
+The position before start is usually *Closed*, to avoid forgetting the furnace open. It can be set to *Opened* in case we need to pre-heat the furnace and then close on the sample. It should be avoided to set on *Unchanged*.  
+
+The position after end is usually *Unchanged* or *Closed*, to reduce thermal shock on the heating elements. It can be *Opened* to minimize the risk of sample flowing on the furnace or to quickly cool it for the next test.
+
+.. hint:: Available only for instruments with motorized furnaces.
 
 
 
@@ -177,4 +184,9 @@ Kiln position before start/after end
 Saving your thermal cycle definition
 ---------------------------------------------
 
+Once you finished editing your thermal cycle, you can save it to the current cycle name visibile in the upper-right combo box, by clicking on **Save** button.
+
+TO save the currently edited cycle with a different name, select the last combo box special entry **+Add**. An input dialog will appear where you can set your cycle name. 
+
+To delete a cycle, select it from the combo box and click **Del** button.
 

@@ -3,7 +3,7 @@
 Camera controller
 ==================================
 
-Contents:
+
 	
 	.. toctree::
 		:maxdepth: 2
