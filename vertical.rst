@@ -1,5 +1,7 @@
 .. include:: substitutions.txt
 
+.. _vertical_dilatometer:
+    
 Vertical Optical Dilatometer
 ==================================
 

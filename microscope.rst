@@ -1,5 +1,7 @@
 .. include:: substitutions.txt
 
+.. _heating_microscope:
+    
 Heating Microscope HSM
 ======================
 

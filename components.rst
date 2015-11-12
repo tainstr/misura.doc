@@ -3,17 +3,21 @@
 Shared Components
 ==================================
 
+This section descibes software components that are shared across all or many Misura applications.
 
 .. toctree::
    :maxdepth: 2
 
    live.rst
-   components/configuration
    components/thermal_cycle
-   components/preferences
-   components/navigator
-   components/metadata
    components/camera
+   components/navigator
+   components/configuration
+   components/metadata
+   components/preferences
+   
+   
+   
 
 
 

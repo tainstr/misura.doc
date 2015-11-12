@@ -1,5 +1,7 @@
 .. include:: substitutions.txt
 
+.. _relative_fleximeter:
+    
 Relative Fleximeter
 ==================================
 

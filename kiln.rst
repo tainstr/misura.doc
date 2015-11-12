@@ -1,6 +1,8 @@
 .. include:: substitutions.txt
 
-Furnace test
+.. _furnace_instrument:
+    
+Furnace test instrument
 ==================================
 
 

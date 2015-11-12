@@ -186,7 +186,7 @@ Saving your thermal cycle definition
 
 Once you finished editing your thermal cycle, you can save it to the current cycle name visibile in the upper-right combo box, by clicking on **Save** button.
 
-TO save the currently edited cycle with a different name, select the last combo box special entry **+Add**. An input dialog will appear where you can set your cycle name. 
+To save the currently edited cycle with a different name, select the last combo box special entry **+Add**. An input dialog will appear where you can set your cycle name. 
 
 To delete a cycle, select it from the combo box and click **Del** button.
 

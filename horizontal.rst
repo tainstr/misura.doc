@@ -1,5 +1,7 @@
 .. include:: substitutions.txt
 
+.. _horizontal_dilatometer:
+    
 Horizontal Optical Dilatometer
 ==================================
 
