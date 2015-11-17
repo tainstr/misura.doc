@@ -22,6 +22,7 @@
    graphics
    m3
    access
+   server
    glossary
 
 .. todo: reinsert options.rst after committing all autodoc options/* files

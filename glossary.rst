@@ -17,3 +17,6 @@ Glossary
     ROI
     Region of Interest
         A rectangle representing a selection of the total camera resolution. 
+        
+    Optical Encoder
+        The entity defining, forecasting and applying the conversion factor between one motor step and the number of pixels it produces on the image.
