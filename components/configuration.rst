@@ -1,4 +1,4 @@
-Machine Configuration
+Misura Server Configuration
 ==================================
 
 	

@@ -25,7 +25,6 @@ Once you know the basics of Veusz_, you can start using proficiently |m| plugins
 * Opened Tests Navigator - shows/hide the |m| :ref:`navigator` panel
 * Preferences - opens :ref:`preferences`.
 
-.. include:: components/navigator.txt
 
 
 

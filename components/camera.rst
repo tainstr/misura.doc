@@ -83,6 +83,8 @@ Each motor role shows an additional submenu called after its name, with those en
 
 Moreover, **X** and **Y** motors are represented directly in the camera controller as a bottom slider (**X**) and a lateral slider on the left (**Y**). A right click on these sliders opens a context menu showing the current position and offering a **Configure** action to open motor configuration panel.
 
+The motion sliders allow to *focus-in* by double-clicking anywhere on them. 
+
 There is a third way to interact with camera positioning: the **motion handle**. It is displayed as a red square in the top-left corner of the image. Dragging and dropping it around the image will cause a motion such that the new position of the top-left corner of the image will correspond to the position where you dropped the square.
 
 .. _camera_analysis:
