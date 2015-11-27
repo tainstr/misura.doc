@@ -1,6 +1,6 @@
 .. include:: substitutions.txt
 
-|m| Instrument Options
+|m| Platform Options
 =======================================
 
 A detailed descrition of each configurable option on the instrument.

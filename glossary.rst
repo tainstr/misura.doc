@@ -38,3 +38,9 @@ Glossary
         
     Analysis App 
         A software component extending an Instrument App in order to add advanced functionalities. An Analysis App might add an experimental image analysis method or an innovative thermal control feature. 
+        
+    Head Morphing
+    Measurement Head Morphing
+    Instrument Initialization
+        The process of configuring the measuring instrument to make a specific kind of measurement. This involves many software controllers setup and moving parts. 
+        

@@ -1,5 +1,7 @@
 .. include:: substitutions.txt
 
+.. _measurement_apps:
+    
 Measurement Apps
 ======================================
 

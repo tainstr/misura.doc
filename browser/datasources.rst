@@ -12,6 +12,8 @@ The more recently accessed file is placed at the top of the list.
 
 The more convenient way to open a test file is to use the database index.
 
+.. _database:
+    
 ---------------------------------
 |m| Databases
 ---------------------------------
