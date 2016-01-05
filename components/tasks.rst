@@ -103,15 +103,3 @@ This table lists tests which were not possible to download due to errors, along 
     - *Retry* the download it by sending back to the **Download Queue**.
     - *Ignore* it by moving to the **Ignored** table.
 
-
-Sharing a database through Windows/Samba
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- The database can be located on a network share. Every client which needs to access the output files or the machine can configure it as its **Default database** in :ref:`preferences`. 
-     
-This is an easy way to collaborate on data post-processing.
-
-.. warning::
-    
-    You might experience problems if a Linux client is accessing a database on a windows share through Samba. You will probably need to disable byte range locks by setting the ``nobrl`` flag when mounting the CIFS filesystem. Example ``/etc/fstab`` entry: ``//192.168.0.1/database /media/database cifs rw,users,nobrl,user=misura,pass=xxxx,exec 0 0``
-    
-
