@@ -88,9 +88,9 @@ Once the sample is positioned and correctly framed, it is advisable to close the
 
 Measure and Sample names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The test name can be directly set in the Status panel, or in the Measure tab. 
+The test name can be directly set in the Status panel, or in the :ref:`live_measure` tab. 
 
-This is the name of your measurement, but the sample (and each sample) can have a different name. Sample names can be set in their Sample<N> tab, in *Name* option.
+This is the name of your measurement, but the sample (and each sample) can have a different name. Sample names can be set in their Sample<N> tab, in *Name* option (see :ref:`live_samples`).
 
 The test name should identify the kind of measurement, while the sample name should identify the material the measurement method is applied to. You will be able to recall the both test name and sample name from the :ref:`database`.
     
@@ -105,14 +105,56 @@ Thermal cycle
 The **Thermal Cycle** tab in the Test Configuration area allows to load a thermal cycle preset or to design a new one. Refer to :ref:`thermal_cycle` for a detailed explanation.
 
 Additional test termination options can be configured in the Measure and Sample sections, depending on the :ref:`measurement_apps` you are using. 
+    
+.. _live_measure:
+
+Measure
+---------
+
+This tab contains:
+    
+    - *Configuration preset*: a combo that allows you to load a previously saved configuration. *Save* and *Del* buttons respectively save and delete currently selected preset.
+    - *Name*: the name to give to the test.
+    - *Maximum test duration*: defines the amount of passed time that will cause the end of the test, even if the thermal cycle is not completed (-1 removes this timeout)
+    - *Stop after thermal cycle*: when set, the acquisition will stop when the thermal cycle is over. If not set, the acquisition will go on until the operator won't stop it manually.
+    - *Operator*: the operator running the test
+    - *Type*: the type of test. Only *Standard* is supported to date
+    - *Start at*: date and time when the test was started
+    - *Number of samples*: sets the number of samples to analyze (can be from 1 to 8)
+    - *Kiln position before acquisition*: the position where the kiln will be placed right before the start of the acquisition
+    - *Kiln position after acquisition*: the position where the kiln will be placed after the end of the acquisition
+    - *End status*: displays the reason of the acquisition's termination
+
+
+.. include:: components/thermal_cycle.rst
+
+.. _live_samples:
+
+Samples
+-------
+
+Every sample has its own tab, named Sample0, Sample1, ...
+
+Each tab contains the details of its sample:
+    
+    - *Configuration preset* is the currentrly loaded preset. You can change it, save it if you make any change, and delete it.
+    - *Name* is the name of the sample
+    - *Temperature* is the current sample temperature
+    - *Initial sample dimension* is the size of the specimen, before the start of the test
+    - *Record frames* defines wether tha raw frame of the sample should be saved or not
+    - *Record profiles* defines wether the sample profiles have to be saved or not
+    - *Border angle* is the angle of currently detected border
+    - *Total displacement* is the current displacement from initial position
 
 
 .. _live_start:
 
-Starting the test
--------------------
+Starting/stopping the test
+----------------------------
 
 Once the test is completely configured, the sample positioned and the furnace moved to its intended initial position, you can start it by clicking on **Start** button in the upper-left toolbar. A confirmation dialog will ask you to review the Status panel. By confirming, the test will start. 
+
+The button bar in the upper side of the main window has two more buttons, **Stop** and **Cool**, as explained in :ref:`live_end`.
 
 .. _delayed_start:
     
@@ -146,12 +188,12 @@ Interacting with a running test
 
 While the test is running it is possible to perform most of the data visualization and processing operations which are available when accessing to a finished test output file. 
 
-* The Status tab will update showing relevant options and output values
-* By clicking on menu Measure->Data Plot, you can view a realtime graph of output values which will open in a subwindow. You can interact with the plot under the Results tab (adding a curve, changing visualization options, etc).
-* By clicking on menu Measure->Data Table, you can inspect all active datasets in a tabular view, which will open in a subwindow.
-* If the instruments records images or sample profiles, the Storyboard will be visible.
+* The :ref:`live_status` tab will update showing relevant options and output values
+* By clicking on menu Measure->Data Plot, you can view a realtime graph of output values which will open in a :ref:`live_plot` subwindow. You can interact with the plot under the Results tab (adding a curve, changing visualization options, etc).
+* By clicking on menu Measure->Data Table, you can inspect all active datasets in a tabular view, which will open in a :ref:`live_table` subwindow.
+* If the instruments records images or sample profiles, the :ref:`storyboard` will be visible.
 
-.. _Live_status:
+.. _live_status:
     
 Status panel
 ^^^^^^^^^^^^^
@@ -190,13 +232,26 @@ Data Plot
 ^^^^^^^^^^^^^^^^
 The Data Plot is accessible by clicking on menu Measure->Data Plot. It is initialized at the start of the test with a default plot showing the most relevant measured property against time. 
 
-The plot can be edited and customized exactly as you would offline using the ref:`browser` or the ref:`plotting`.
-    
+The plot can be edited and customized exactly as you would offline using the ref:`browser` or the ref:`plotting`. See :ref:`data_plot` for more help.
+
 .. warning:: 
     It is advisable not to build complex plots during live acquisition, as you will loose all your careful work when the test ends. Moreover, complex data operations might slow down the user interface and lead it to a complete freeze, as they are entirely re-computed each time a new data point is received. If this happens, close the Live Acquisition window and reconnect to the running machine. Plotting data has no effect on test execution, measurement, and data collection.
 
 .. hint::
     The data you see during live acquistion is not exactly the same you will find on the output file. This is because the data plot will display raw values as they arrive each couple of seconds. Instead, when you open the output file after the test ended, you will plot slightly smoothed data considering tens of points per second. 
+    
+
+.. live_results:
+    
+Results
+^^^^^^^^
+
+The *Results* tab contains another series of tabs, which are:
+    
+    - *Data Tab*: a tree that contains all plottable data to allow you to perform operations over it.
+    - *Properties* and *Formatting*: are the equivalent of Properties and Formatting on the right click menu of the `Data Plot`_. Operations are applied on the object selected in the Objects tab or on the plot.
+    - *Objects* is a 1 to 1 representation of the plot; it allows to select objects to perform operations in other contexts.
+    - *Console* is the Veusz_ output console.
 
 
 .. _live_table:
@@ -207,11 +262,11 @@ The Data table is accessible by clicking on menu Measure->Data Table. It display
 
 New data points are dynamically added at the end of the table. The table can be exported to ``*.csv`` file format anytime by right-clicking on the header.
 
-
+.. _storyboard:
+    
 Storyboard
 ^^^^^^^^^^^
 The storyboard displays a list of recorded frames or profiles of a sample. The target sample can be changed with the upper-left combo box. 
-
 
 The storyboard is available only when images or profiles are saved in the output file. Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
 
