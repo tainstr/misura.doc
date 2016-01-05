@@ -80,7 +80,11 @@ The following paragraphs explain common procedures or concepts needed to carry o
 
 Moving the furnace
 ^^^^^^^^^^^^^^^^^^^
-The first step of test configuration is placing the sample in the right position. If the furnace is motorized, you should always open it by using the option **Is the furnace closed?** in the Status tab, or the **Furnace:** box in the bottom bar. That option should be changed to the desired position: *Closed* or *Opened*. Once the sample is positioned and correctly framed, it is advisable to close the furnace using the same option, and proceed with test configuration.
+The first step of test configuration is placing the sample in the right position. If the furnace is motorized, you should always open it by using the option **Is the furnace closed?** in the Status tab, or the **Furnace:** box in the bottom bar. That option should be changed to the desired position: *Closed* or *Opened*. 
+
+Once the sample is positioned and correctly framed, it is advisable to close the furnace using the same option, and proceed with test configuration.
+
+.. _live_names:
 
 Measure and Sample names
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -94,11 +98,13 @@ For simplicity you can just set the test name to a string identifying both the k
     
 The test name will also be used as the output file name. If a file with the same name already exists, it will be postfixed with `_<N>`, where `<N>` will be increased until an unique name exists (`measure`, `measure_1`, `measure_2`, etc).
 
+.. _live_thermal:
+
 Thermal cycle 
 ^^^^^^^^^^^^^^
 The **Thermal Cycle** tab in the Test Configuration area allows to load a thermal cycle preset or to design a new one. Refer to :ref:`thermal_cycle` for a detailed explanation.
 
-Additional test termination options can be configured in the Measure and Sample sections, depending on the :ref:`measurement_app` you are using. 
+Additional test termination options can be configured in the Measure and Sample sections, depending on the :ref:`measurement_apps` you are using. 
 
 
 .. _live_start:
@@ -109,6 +115,7 @@ Starting the test
 Once the test is completely configured, the sample positioned and the furnace moved to its intended initial position, you can start it by clicking on **Start** button in the upper-left toolbar. A confirmation dialog will ask you to review the Status panel. By confirming, the test will start. 
 
 .. _delayed_start:
+    
 Delayed start
 ^^^^^^^^^^^^^^
 To schedule a test to start at a specified date in the future, you can use the **Delayed start** feature, available from the **Measure** menu. 
@@ -137,22 +144,90 @@ Dismissing the dialog equals aborting the delayed start.
 Interacting with a running test
 ----------------------------------
 
+While the test is running it is possible to perform most of the data visualization and processing operations which are available when accessing to a finished test output file. 
+
+* The Status tab will update showing relevant options and output values
+* By clicking on menu Measure->Data Plot, you can view a realtime graph of output values which will open in a subwindow. You can interact with the plot under the Results tab (adding a curve, changing visualization options, etc).
+* By clicking on menu Measure->Data Table, you can inspect all active datasets in a tabular view, which will open in a subwindow.
+* If the instruments records images or sample profiles, the Storyboard will be visible.
+
+.. _Live_status:
+    
 Status panel
 ^^^^^^^^^^^^^
-* Status panel
+The Status panel will update showing relevant status, configuration options and real-time output values. 
 
+It always contains information about:
+    
+    * **Acquisition status**: is there a running test? This coloured checkbox will be False over green background when there is no running test; True over red background while a test is running. 
+    * **Thermal control status**: is there any running thermal cycle? This coloured checkbox will be False over green background when there is no active thermal control (no thermal cycle); True over red background if the temperature is currently under control by a thermal cycle. 
+    * **Test name**. This text box is synchronized with the one contained in the **Measure** tab.
+    * **Elapsed time**: Seconds passed since the start of the test.
+
+Thermal control status cannot be True if the acquistion status is False. In other words, temperature cannot be controlled by a thermal cycle outside of a running test. 
+
+On the opposite it is possible that the thermal control is turned off during a running test. This happens if the test was set to do not end with the thermal cycle and its target duration was longer than the duration of the thermal cycle. The operator can also manually interrupt the thermal control anytime by pressing the ``Cool`` button - without stopping the acquistion (see below ref:`live_end`).
+
+The Status panel also contains real-time thermal control parameters, as:
+    
+    * **Sample temperature**: Temperature measured as near as possible the sample, on the sample holder.
+    * **Furnace temperature**: Also measured quite near the sample, but attached to the furnace chamber. Thus, if the furnace opens, this thermocouple signal will record the inside of the empty furnace, while the Sample temperature above will record the environment temperature outside of the furnace, nearby to the sample.
+    * **Setpoint**: The target temperature of the thermal cycle.
+    * **Power**: The percentage of power emitted in order for the control temperature to reach the setpoint temperature.
+    * **Control temperature**: The reference temperature used for power emission in order to reach the setpoint. This is usually equal to the Sample temperature while the furnace is closed; to the furnace temperature while it is open; or to a custom combination of both.
+
+Additionally, the Status panel contains realtime values depending on the current Measurement App:
+    
+    * Initial sample dimension
+    * Displacement (expansion/contraction/flexion)
+    * Volume
+    * Height
+    * ...
+
+.. _live_plot:
+    
 Data Plot
 ^^^^^^^^^^^^^^^^
-* Plotting results
+The Data Plot is accessible by clicking on menu Measure->Data Plot. It is initialized at the start of the test with a default plot showing the most relevant measured property against time. 
 
+The plot can be edited and customized exactly as you would offline using the ref:`browser` or the ref:`plotting`.
+    
+.. warning:: 
+    It is advisable not to build complex plots during live acquisition, as you will loose all your careful work when the test ends. Moreover, complex data operations might slow down the user interface and lead it to a complete freeze, as they are entirely re-computed each time a new data point is received. If this happens, close the Live Acquisition window and reconnect to the running machine. Plotting data has no effect on test execution, measurement, and data collection.
+
+.. hint::
+    The data you see during live acquistion is not exactly the same you will find on the output file. This is because the data plot will display raw values as they arrive each couple of seconds. Instead, when you open the output file after the test ended, you will plot slightly smoothed data considering tens of points per second. 
+
+
+.. _live_table:
+    
 Data Table
 ^^^^^^^^^^^
-* Viewing data table
+The Data table is accessible by clicking on menu Measure->Data Table. It displays one column for each :term:`Loaded Dataset`. 
+
+New data points are dynamically added at the end of the table. The table can be exported to ``*.csv`` file format anytime by right-clicking on the header.
+
 
 Storyboard
 ^^^^^^^^^^^
-* The storyboard
+The storyboard displays a list of recorded frames or profiles of a sample. The target sample can be changed with the upper-left combo box. 
+
+
+The storyboard is available only when images or profiles are saved in the output file. Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
+
+It is always visible in the Microscope app. If not, it can be accessed by clicking on menu Measure->Storyboard. 
+
+A label below each image reports the temperature value at which the image was recorded (eg: ``T: 321``). More measured values can be displayed by dragging and dropping nodes from the **Results** tab.
+
+The number of images is fixed (usually five on an horizontal row). 
+
+The user can navigate forward and backward by using the upper slide bar, which will cause the images to update to the recorded data in the position indicated by the slider, relative to total test duration.
+
+Navigating through the images will cause a vertical red line to move back and forth in the :ref:`live_plot`, if visible. The operator can thus view measured values associated with displayed images. 
     
+It is possible to navigate through the images also by dragging and dropping the red bar on the :ref:`live_plot` to different X-axis values.
+
+
 
 .. _live_end:
     

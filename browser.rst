@@ -1,5 +1,8 @@
 .. include:: substitutions.txt
-Data Browser
+
+.. _browser:
+    
+|m| Browser
 ==================================
 
 |m| Browser allows to evaluate the results of a test run and to access to the full measurement instrument configuration. 

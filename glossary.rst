@@ -42,5 +42,15 @@ Glossary
     Head Morphing
     Measurement Head Morphing
     Instrument Initialization
-        The process of configuring the measuring instrument to make a specific kind of measurement. This involves many software controllers setup and moving parts. 
+        The process of configuring the measuring instrument to make a specific kind of measurement. This involves many software controllers setup and moving parts.
+        
+    Loaded
+    Loaded Dataset
+    Loaded Datasets
+        A loaded dataset is currently loaded into the application memory. It can be plotted and used as the input for any data processing step. Opposite of :term:`Available Dataset`.
+            
+    Available
+    Available Dataset
+    Available Datasets
+        An available dataset is not loaded into the application memory, but exists on the output file containing test data (it is *available for loading*). They are usually filtered out from the :ref:`navigator` and are not visible in data processing steps. An available dataset can be easily loaded through the use of :ref:`navigator`. 
         
