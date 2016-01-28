@@ -5,6 +5,13 @@
 Heating Microscope HSM
 ======================
 
+The Misura Heating Microscope allows to study the change in shape of a small sample of material as a function of the furnace temperature. Through Misura Morphometrics analysis, it is possible to fully characterize the behavior of the material, automatically detecting characteristic shapes according to improved mathematical models and traditional international standards as well. 
+
+
+
+
+
+
 To open the HSM controls, you have to select HSM in the selection window that apperas after having logged in.
 
 Read :ref:`live_acquisition` for a general description of the acquisition window and about how to start a test.
@@ -16,8 +23,6 @@ HSM window is made of these main parts:
 - :ref:`live_table`
 - :ref:`storyboard`
 - `Test Configuration panel`_
-
-
 
 
 Camera window
@@ -40,5 +45,4 @@ It's composed of a series of tab:
 - `Thermal Cycle Designer`_
 - Samples_
 - Results_
-
 
