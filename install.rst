@@ -10,16 +10,21 @@ Prerequisites
 ==============================
 
 * 1GB of free hard disk storage
-* 500MB of free RAM. For typical operating system use, we advise 2GB of system RAM for GNU/Linux and 4GB of system RAM for |win|.
+* 500MB of free RAM. For typical operating system use, we advise 2GB of system
+  RAM for GNU/Linux and 4GB of system RAM for |win|.
 * 2Ghz, dual core processor
 
 
 =======
 |win|
 =======
-|m4| for |win| XP / Vista / 7 / 8 can be downloaded as a compressed zip file, containing executable files, libraries and data.
+|m4| for |win| XP / Vista / 7 / 8 can be downloaded as a compressed zip file,
+containing executable files, libraries and data.
 
-Precompiled executables and example data packages are available on |m| public repository: `https://github.com/tainstr/misura.client/releases`_
+Precompiled executables and example data packages are available on |m|
+`public repository`_.
+
+.. _public repository: https://github.com/tainstr/misura.client/releases
 
 1. Extract all contents of the zip file to ``C:\misura``.
 	.. tip:: Experienced users can choose their preferred location. Please consider that placing the application on external hard-drives or slow storage devices can significantly affect startup time.
@@ -44,8 +49,10 @@ Upgrading involves making a backup copy of the old application folder and instal
 |m4| for |ults| GNU/Linux operative system can be downloaded as a compressed
 bzip2 file, containing executables files, libraries and data.
 
-Precompiled executables and example data packages are available on |m| public
-repository: `https://github.com/tainstr/misura.client/releases`_
+Precompiled executables and example data packages are available on |m|
+`public repository`_.
+
+.. _public repository: https://github.com/tainstr/misura.client/releases
 
 1. Extract all contents of the bz2 file to a place you are comfortable with.
 2. In the extracted files, you'll find many files: locate the 3 main
