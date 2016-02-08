@@ -3,7 +3,7 @@
 Installation
 ==================================
 
-This document describes the installation and quick start of |m4| software. 
+This document describes the installation and quick start of |m4| software.
 
 ==============================
 Prerequisites
@@ -21,10 +21,10 @@ Prerequisites
 
 Precompiled executables and example data packages are available on |m| public repository: `https://github.com/tainstr/misura.client/releases`_
 
-1. Extract all contents of the zip file to ``C:\misura``. 
+1. Extract all contents of the zip file to ``C:\misura``.
 	.. tip:: Experienced users can choose their preferred location. Please consider that placing the application on external hard-drives or slow storage devices can significantly affect startup time.
 2. Browse to ``C:\misura``. You will find many files: locate the 3 main executable files, ``browser.exe``, ``acquisition.exe``, ``graphics.exe``.
-3. For each executable file, right click on it and select "Create link". A new file will be created each time (E.g.: ``C:\misura\browser.exe - link``). 
+3. For each executable file, right click on it and select "Create link". A new file will be created each time (E.g.: ``C:\misura\browser.exe - link``).
 4. Copy or move the newly created link files to your Desktop, in order to find them more easily.
 
 .. hint:: You should extract all contents of the zip file. Moving or copying the executables somewhere else from the relative position they have in the extracted folder will cause severe errors. Create shortcuts if you want to easily reach executables from your preferred positions.
@@ -41,6 +41,14 @@ Upgrading involves making a backup copy of the old application folder and instal
 ========
 |u|
 ========
-|m4| for |ults| GNU/Linux operative system does not offer executable files. The application is run directly from the |py| source code. Thus, it requires the installation of the full development environment and the download of the entire source code from the version control repository.
+|m4| for |ults| GNU/Linux operative system can be downloaded as a compressed
+bzip2 file, containing executables files, libraries and data.
 
-.. _https://github.com/tainstr/misura.client/releases: https://github.com/tainstr/misura.client/releases
+Precompiled executables and example data packages are available on |m| public
+repository: `https://github.com/tainstr/misura.client/releases`_
+
+1. Extract all contents of the bz2 file to a place you are comfortable with.
+2. In the extracted files, you'll find many files: locate the 3 main
+   executable files, ``browser``, ``acquisition``, ``graphics``.
+3. For each executable file, you can create a symbolic link to a place in your
+   PATH, or you can execute them directly.
