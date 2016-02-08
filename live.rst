@@ -10,8 +10,6 @@ The Live Acquisition software allows to carry on any kind of measurement availab
 This section describes basic concepts, functionalities and procedures which are general enough to be applicable to any measurement. 
 
 More specific instructions can be found in :ref:`measurement_apps` sections dedicated to each instrument.
-    
-.. contents:: How to run a test
    
 
 .. _live_connect:

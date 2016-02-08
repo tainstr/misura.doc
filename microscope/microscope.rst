@@ -1,14 +1,21 @@
-.. include:: substitutions.txt
+.. include:: ../substitutions.txt
 
 .. _heating_microscope:
     
 Heating Microscope HSM
-======================
+=======================
 
 The Misura Heating Microscope allows to study the change in shape of a small sample of material as a function of the furnace temperature. Through Misura Morphometrics analysis, it is possible to fully characterize the behavior of the material, automatically detecting characteristic shapes according to improved mathematical models and traditional international standards as well. 
 
 
-
+.. toctree::
+    :maxdepth: 2
+    
+    quickstart
+    quickstart_browser
+    morphometrics
+    
+    
 
 
 

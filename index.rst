@@ -8,7 +8,7 @@
 |m| documentation project
 =======================================
 
-|m| is the data acquisition and analysis software for non-contact high temperature measurement instruments.
+|m| is the data acquisition and analysis software platform for non-contact high temperature measurement instruments.
 
 
 
@@ -16,9 +16,9 @@
    :maxdepth: 2
 
    install
-   instruments
-   browser
    components
+   instruments
+   browser/browser.rst
    graphics
    m3
    access

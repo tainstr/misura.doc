@@ -19,8 +19,7 @@ Use this index to navigate to the desired measurement function.
 .. toctree::
 	:maxdepth: 2
     
-	live
-	microscope
+	microscope/microscope.rst
 	horizontal
 	vertical
 	absflex

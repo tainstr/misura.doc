@@ -1,19 +1,19 @@
 .. include:: substitutions.txt
 
-Shared Components
+The Measurement Platform
 ==================================
 
-This section descibes software components that are shared across all or many Misura applications.
+This section descibes software components that are shared across all or many Misura applications. They are presented in a general way which is applicable to any measurement task.
 
 .. toctree::
    :maxdepth: 2
 
-   components/thermal_cycle
-   components/camera
+   live
    components/tasks
-   components/navigator
+   components/thermal_cycle
    components/data_plot
-   components/configuration
+   components/camera
+   components/navigator
    components/metadata
    components/preferences
    

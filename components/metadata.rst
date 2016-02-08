@@ -1,4 +1,4 @@
-Metadata/Script editor
+Metadata and Scripts
 ==================================
 
 	

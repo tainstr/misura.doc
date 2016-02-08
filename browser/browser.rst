@@ -1,4 +1,4 @@
-.. include:: substitutions.txt
+.. include:: ../substitutions.txt
 
 .. _browser:
     
@@ -13,8 +13,7 @@ The browser has a tab interface, where the first tab is reserved to Databases, a
 	.. toctree::
 		:maxdepth: 2
 		
-		browser/datasources.rst
-		browser/test_window.rst
-		browser/quickstart_hsm
-		browser/quickstart_vertical
-		browser/quickstart_horizontal
+		datasources.rst
+		test_window.rst
+		quickstart_vertical
+		quickstart_horizontal
