@@ -15,7 +15,6 @@ The Misura Heating Microscope allows to study the change in shape of a small sam
     quickstart_browser
     morphometrics
     
-    
 
 
 

@@ -15,7 +15,7 @@ In order to follow the tutorial you should:
 * Download and Install Misura\ |trade|.
 * Get the sample file |smp| and save it to a known location (eg: your Desktop)
 
-.. include:: quickstart/opening.txt
+.. include:: ../browser/quickstart/opening.txt
 
 =================================
 Test Configuration and Data
