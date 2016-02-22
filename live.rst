@@ -57,7 +57,7 @@ The menu bar contains:
     * **Settings**: gives access to advanced configuration panels for the **Instrument** itself, its individual **Devices**, or the full **Global** configuration.
     * **Help**: client configuration, documentation link opening the documentation you are reading, the :ref:`pending_tasks` dialog, the software information dialog.
 
-On the left side of the window you find a tabbed **Test Configuratio** area, showing:
+On the left side of the window you find a tabbed **Test Configuration** area, showing:
     * **Status** tab: contains short summary of the current test condition. The first two options shows if a test is running (data recording) and if the thermal control is active. They are underlined in green when not active, in red when running. Then follows information on test name and test duration (if running); the furnace position if motorized; temperatures, setpoint and power output. More sample-dependent option can be shown based on the active measurement app. 
     * **Measure** tab: generic test configurations can be made (starting and stopping conditions) and metadata can be viewed (eg: maximum temperature reached)
     * **Thermal Cycle** tab: allows to define the thermal cycle and preview it

@@ -87,14 +87,39 @@ The motion sliders allow to *focus-in* by double-clicking anywhere on them.
 
 There is a third way to interact with camera positioning: the **motion handle**. It is displayed as a red square in the top-left corner of the image. Dragging and dropping it around the image will cause a motion such that the new position of the top-left corner of the image will correspond to the position where you dropped the square.
 
-.. _camera_analysis:
+.. _camera_search_sample:
+    
+Finding the sample on camera
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Upon instrument initialization cameras should automatically be positioned very near to the sample. As Misura instrument allow :term:`Free Sample Positioning`, motion control must then be used to exactly find the sample or the part of it which should be analyzed (eg: the border).
+    
+This positioning can usually be carried out with provided X, Y motion controls (were present) or with manual micrometrical axis tables. 
+
+.. _camera_focus:
+    
+Adjusting the focus
+^^^^^^^^^^^^^^^^^^^^^^^
+
+All Misura :term:`ODP` instruments allow :term:`Free Sample Positioning`. Before starting a test, the user must manually adjust the focus distance with the provided focus motion controller. 
+
+As the focus motor is only one and affects all cameras in the instrument, its motion control is usually showed in a priviledged position as a slider on the bottom of the acquisition window. 
+
+In case multiple cameras are used (horizontal dilatometer or fleximeter), care must be taken at positioning the sample perpendicularly to the alumina holding rods, in order to have the same focus distance for all of the cameras.
+
+Focusing the sample is an iterative procedure, where the focus slider is moved back and forth until the optimal focus distance is found. 
+
+
+.. _camera_analysis:
+    
 Analysis
 ------------------
 
 The **Analysis** submenu allows to visualize some of the results obtained from image analysis. The results will be displayed as lines overlaid on the original frames. 
 
 The most useful analysis overlay is the :term:`Regions of Interest`, which can be activated by the **View Regions** action. Each sample defined for the camera will be surrounded by a colored rectangle, representing the area of analysis. This rectangle can be resized by dragging and dropping two hook points on the top-left and bottom-right corners.
+    
+Restricting the region of interest allows to individually select samples when more than one is viewed by the same camera. It is also useful to filter out imperfections, like dirt on holding plate or camera CCD.
     
 The **Reset Regions** action will restore the default region sizes.
 

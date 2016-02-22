@@ -33,7 +33,7 @@ The correct preparation of the sample is essential to a good analysis. Based on 
 5. Make sure the plate is perfectly clean and that there are no residues or build up of body on it.
 6. In general it is best to place the samples in the centre of the plate, slightly towards the thermocouple.
 
-
+.. image:: good.jpg
 
 Multi-samples should be separated sufficiently so that they will not stick together or melt over the edge of the plate damaging the thermocouple.  For safety you can put another plate underneath. 
 They should be positioned so that the do not melt together and confuse the analysis of the image but not so far apart that they could melt over the edge or not be picked up properly by the camera.

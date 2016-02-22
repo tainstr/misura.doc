@@ -11,6 +11,9 @@ Glossary
     * Thermal cycle, heating cycle, temperature profile
     
 .. glossary::
+    ODP
+        Optical Dilatometry Platform, the most complete hardware controlled by Misura software.
+    
     CCD
         The Charge-Coupled Device responsible for digital image acquisition. The term is usually referred to mean the active camera resolution, from which one or multiple regions of interests can be selected.
         
@@ -53,4 +56,7 @@ Glossary
     Available Dataset
     Available Datasets
         An available dataset is not loaded into the application memory, but exists on the output file containing test data (it is *available for loading*). They are usually filtered out from the :ref:`navigator` and are not visible in data processing steps. An available dataset can be easily loaded through the use of :ref:`navigator`. 
+            
+    Free Sample Positioning
+        A characteritic of all :term:`ODP` instrument is that samples are placed by hand with no physical constraints and very ample limiting geometries.
         
