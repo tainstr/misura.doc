@@ -22,6 +22,5 @@ Use this index to navigate to the desired measurement function.
 	microscope/microscope.rst
 	horizontal/horizontal.rst
 	vertical/vertical.rst
-	flex
-	kiln
+	flex/flex.rst
 		

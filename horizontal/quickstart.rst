@@ -26,11 +26,10 @@ The workflow for an horizontal dilatometer test follows the general rules descri
     
 Adjusting cameras position
 --------------------------------
-:term:`ODP` cameras are mounted on three motorized axes: the lateral displacement, the height and the :term:`Global Focus` (X, Y, Focus). Older/simpler models might still have manual positioning with micrometric translation stages. 
     
 The initial position of the camera should be automatically reached during instrument initialization, as described in :ref:`camera_motion_control`.
     
-Use the X motion control under each camera to find the border of the sample, which should appear as a vertical division line between a white and a black area, where the black are represents the sample. 
+Use the X motion control under each camera to find the border of the sample, which should appear as a vertical division line between a white and a black area, where the black represents the sample. 
 
 In case of indented sample borders, use the Y motion control to frame the most planar section of the surface.
 
