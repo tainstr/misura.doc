@@ -1,7 +1,10 @@
 .. include:: ../substitutions.txt
 
+.. _datasources:
+    
+===============
 Data Sources
-==================================
+===============
 
 Data Sources is always the first Browser's tab, and is not possible to close it.
 
@@ -13,10 +16,9 @@ The more recently accessed file is placed at the top of the list.
 The more convenient way to open a test file is to use the database index.
 
 .. _database:
-    
----------------------------------
-|m| Databases
----------------------------------
+
+Database Indexes
+-----------------
 
 |m| databases are a way to organize and search large amounts of tests, and for finding or establishing relations between them.
 
@@ -26,9 +28,7 @@ They are ephermeral, in the sense that they can be safely removed and recreated 
 
 There should always be a default database defined at the top of the list. This is the database where finished tests are automatically saved and indexed, configured in :ref:`preferences` under **Default database** option. 
     
-    
-Sharing databases
-~~~~~~~~~~~~~~~~~~~~
+
 The database can be located on a network share, to enable multi-user collaboration. Every client which needs to access the output files or the machine can configure it as its **Default database** in :ref:`preferences`, so finished tests are automatically added to that location only once.
         
 This is an easy way to collaborate on data post-processing. It is advisable to save also the plots in the same, shared folder, so any user participating in the network will be able to open them.
@@ -40,6 +40,7 @@ This is an easy way to collaborate on data post-processing. It is advisable to s
 ---------------------------------
 Database Dialog
 ---------------------------------
+
 The interface towards a database is the Database Dialog. It shows a listing with all indexed tests, plus a query line with some filtering options to filter the list. 
 
 The toolbar holds three buttons: ``Delete``, ``Refresh``, ``Rebuild``. 

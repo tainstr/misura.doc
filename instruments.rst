@@ -20,9 +20,8 @@ Use this index to navigate to the desired measurement function.
 	:maxdepth: 2
     
 	microscope/microscope.rst
-	horizontal
-	vertical
-	absflex
+	horizontal/horizontal.rst
+	vertical/vertical.rst
 	flex
 	kiln
 		

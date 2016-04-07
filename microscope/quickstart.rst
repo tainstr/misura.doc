@@ -14,13 +14,13 @@ Microscope Acquisition Window
 
 The Microscope :ref:`live_acquisition` window additionally comprises:
     
-    * One/two high-resolution :ref:`camera` windows.
-    * Focus and height motion controllers.
+    * One/two high-resolution :ref:`camera` windows with height motion controller.
+    * :term:`Global Focus` motion controller.
     * Samples height information displayed on the :ref:`live_status` panel, updated realtime during the analysis.
     * One to eight :ref:`live_samples` tabs in the left Test Configuration area.
     * The :ref:`storyboard` bottom area.
         
-The workflow for a microscope test follow the general rules described in section :ref:`live_acquisition`.
+The workflow for a microscope test follows the general rules described in section :ref:`live_acquisition`.
    
 .. microscope_camera:
     
@@ -42,15 +42,39 @@ The excess of the region dimensions with respect to the sample depend on the lim
 Recording Frames and Profiles
 -------------------------------
 
+|m| records can record raw frames, as they are received from the camera, and/or analyzed (x,y) profiles produced by the morphometric analysis. 
+
+The default behaviour is to record profiles and discard frames, to save space. 
+
+This option can be set in :ref:`live_samples` sections independently for each sample. 
+
+
 .. microscope_shapes:
     
-Characteristic shapes
------------------------
+Standards for Characteristic shapes identification
+---------------------------------------------------
 
-Characteristic shapes are displayed in the :ref:`live_samples` tab under **Test Configuration** area, as a Time/Temperature couple. 
+Characteristic shapes are displayed in the :ref:`live_samples` tab in **Test Configuration** side area, as a Time/Temperature :ref:`metadata` label. 
     
 Basic shape recognition parameters can be affected by expanding sub-options ([+] button on the right) and adjusting the sliders to the desired values.
 
+|m| always calculate shapes according to its advanced morphometric logic, making use of 3D extrapolations and 
+
+.. microscope_afterShape:
 Stopping the test when a shape is recognized
 ---------------------------------------------
+
+A Microscope test can be automatically interrupted when a characteristic shape is recognized. To activate this termination option:
+    
+    * Select the :ref:`live_measure` tab in **Test Configuration** side area and scroll to the bottom of the page. 
+    * Locate the ``After recognized shape`` option and click on the checkbox on the right to enable it. 
+    * The the test will end when the ``Melting`` shape is recognized. 
+
+To fine-tune the test termination, expand sub-options by clicking on the "+" sign on the right of the ``Edit`` button. 
+
+    * ``Stop after temperature changed by`` will cause the test to interrupt after the temperature changed by the configured number of degrees from the instant when the shape was recognized. The default value is 10°C. This means that if the melting is recognized at 600°C, the test will be interrupted at 610°C, or 590°C in the unlikely event the furnace was cooling down. 
+    * ``Stop after time passed`` will wait the configured amount of seconds before interrupting the test. The default value is zero, meaning as soon as the condition is met. 
+    * The test will end when ``both`` termination options are met (after temperature changed enough and after the minimum amount of time has passed).
+    * ``Require all samples``: in case of multi-sample tests, the default behaviour is to interrupt the test as soon as any sample meets the conditions (as soon as any sample melts). If this option is activated, all samples are required to meet the termination conditions for the test to be stopped (all samples must melt).
+
 

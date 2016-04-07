@@ -18,11 +18,5 @@ The following sections contain instruction about how to start a test, prepare a 
     
 
 
-#####
-TODO
-How to check for recognized shapes
-Stop when shape recognized
-Shape recognition
-Q&A
 
 

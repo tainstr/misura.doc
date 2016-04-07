@@ -59,4 +59,15 @@ Glossary
             
     Free Sample Positioning
         A characteritic of all :term:`ODP` instrument is that samples are placed by hand with no physical constraints and very ample limiting geometries.
+            
+    Metadata
+        Test metadata summarizes high-level aspects about test execution, expressed as a value, a time and a temperature. Test data contains time series of recorded values: eg how the length of the sample changes with time. A metadata is, for example, the maximum rate of change of the length: its value, the time at which it happened and the sample temperature at that time. Metadata is usually calculated runtime during the test execution, and can be replayed offline from the :ref:`browser`. 
+            
+    Scripts
+    Script
+        Small portions of source code which is executed by :term:`Misura Server` during a test. Scripts are exposed to the client and can be customized by the user to meet specific control procedures or experimental morphometrics standards. 
+            
+    Global Focus
+        The focus distance can be adjusted for all cameras at the same time by means of a motorized translation stage. It is not possible to independently adjust the focus of each single camera. This is actually intentional as a discrepancy in focus distances usually suggests a sub-optimal sample orientation.
+        
         

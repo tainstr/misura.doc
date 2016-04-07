@@ -33,4 +33,15 @@ The replay is accessible from the  ``Measure`` menu, at the ``Re-evaluate standa
 Versioning
 ---------------------
 
+It is possible to change any configuration option and any metadata and save everything in a new test ``version``, and multiple versions can be saved in each test file. The original data is cannot be modified or removed from a test file.
 
+Versioning allows, for example, to correct the test name, or add a comment, or manually edit characteristic shapes. To save a new version, starting from a file containing only the original data:
+
+1. Do your changes to any configuration option
+2. Click on ``Measure`` menu -> ``Version`` -> ``New version``
+3. A dialog box will ask the label of the new version. 
+
+After a new version is created, the ``Version`` menu will show an additional, checked item below the ``Original`` one. 
+The active version will be overwritten by clicking ``Save configuration`` from the same Version menu. 
+
+The ``Original`` version cannot be overwritten. A new version name is asked if attempting to do so.

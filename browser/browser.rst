@@ -10,10 +10,10 @@
 The browser has a tab interface, where the first tab is reserved to Databases, and any  additional tab represents a test file. 
 
 	
-	.. toctree::
-		:maxdepth: 2
-		
-		datasources.rst
-		test_window.rst
-		quickstart_vertical
-		quickstart_horizontal
+.. toctree::
+	:maxdepth: 2
+	
+	datasources.rst
+	test_window.rst
+
+

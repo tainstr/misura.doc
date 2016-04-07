@@ -10,10 +10,13 @@
 
 |m| is the data acquisition and analysis software platform for non-contact high temperature measurement instruments.
 
+Please always refer to the updated version of this document which can be found online here:
+    
+    `<http://misura.readthedocs.org>`_
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    install
    components

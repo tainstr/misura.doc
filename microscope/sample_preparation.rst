@@ -2,8 +2,8 @@
  
 .. _microscope_sample_preparation:
 
-Sample preparation 
-=====================
+Sample preparation for the Heating Microscope  
+==============================================
 
 The shape of the sample and the change in outline are very important for recognizing the fundamental points. The sample should be made with the correct tools and be of the correct dimensions.  You should also avoid carrying out tests on samples with particular imperfections, such as those described and illustrated below.  
 
