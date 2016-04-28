@@ -140,6 +140,8 @@ To add a control transition, right click and select *Insert control transition*.
 
 .. hint:: This event is meaningful only when your instrument supports more than one thermocouple (samples and/or furnace).
 
+.. stopping_conditions:
+    
 ---------------------------------------------
 Additional Control Options
 ---------------------------------------------

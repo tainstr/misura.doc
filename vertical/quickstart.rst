@@ -46,3 +46,19 @@ The Vertical Optical Dilatometer measures changes in length, but cannot measure 
 
 The operator must measure it before starting a test, by using a high precision caliper. 
 
+.. vertical_stopping:
+    
+Stopping the test on excess deformation
+-----------------------------------------
+
+The vertical dilatometer is designed to follow the sample until complete melting. Nevertheless, this might pose the risk of sample flowing below the sample holder if its viscosity drops down enough.
+
+In thermal cycle tab, under ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
+    
+The security limits are +25 and -50 and are active by default.
+    
+This option helps preventing sample flowing in the furnace. 
+
+We advise to enable this option and set reasonable limits for the specific material analysed.
+
+

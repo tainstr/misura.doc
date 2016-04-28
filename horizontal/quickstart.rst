@@ -46,3 +46,18 @@ The Horizontal Optical Dilatometer measures changes in length, but cannot measur
 
 The operator must measure it before starting a test, by using a high precision caliper. 
 
+.. horizontal_stopping:
+Stopping the test on excess deformation
+-----------------------------------------
+
+In thermal cycle tab, under ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
+    
+The security limits are +10 and -10 and are active by default.
+
+This option helps preventing sample melting in the furnace. In many cases melting will raise image analysis errors which will stop the acquisition anyway. Nevertheless, under some circumstances there is no way to detect melting from the border image. 
+
+We advise to enable this option and set reasonable limits for the specific material analysed.
+
+
+
+
