@@ -123,9 +123,6 @@ This tab contains:
     - *Kiln position after acquisition*: the position where the kiln will be placed after the end of the acquisition
     - *End status*: displays the reason of the acquisition's termination
 
-
-.. include:: components/thermal_cycle.rst
-
 .. _live_samples:
 
 Samples
