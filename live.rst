@@ -27,6 +27,21 @@ A username and a password will be prompted, and saved for any future connection 
 
 Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, and as **Connect**->**Server** menu items.
 
+Client network configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You should connect to the instrument through a crossover cable or a private hub just between the client PC and the instrument network interface. 
+
+As the instrument provides no network auto-configuration, you will required to manually set-up your network interface in order to be able to reach that IP. 
+
+Factory-installed clients usually have this configuration:
+
+* IP: 172.16.8.88
+* Netmask: 255.255.255.0
+* Gateway and DNS: None
+
+Follow this `official guide for Windows <https://support.microsoft.com/en-us/help/15089/windows-change-tcp-ip-settings>`_ to disable DHCP and manually set a fixed address.
+
 Time synchronization
 ^^^^^^^^^^^^^^^^^^^^^^^^
 The time between instrument and client computer is kept synchronized. The user may periodically see a warning message upon connection, asking to re-synchronize times. If replied positively, the instrument will restart for synchronization. 

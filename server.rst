@@ -7,6 +7,14 @@ Misura Server
 
 Misura Server is the software component embedded in the measurement instrument. It is responsible for the control of all of the instrument's hardware and for data recording.
 
+Web Interface
+--------------
+A very basic web interface is available to retrieve test files, logs and configurations. 
+
+* Test files: https://172.16.8.68:3880/data
+* Log files: https://172.16.8.68:3880/data/log
+* Configuration files: https://172.16.8.68:3880/conf
+* Status: https://172.16.8.68:3880/stream
 
 .. _server_process:
     
@@ -47,3 +55,6 @@ Shutting down
 ^^^^^^^^^^^^^^^
 
 TODO
+
+
+
