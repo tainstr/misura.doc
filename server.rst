@@ -54,7 +54,35 @@ To reboot the controller:
 Shutting down
 ^^^^^^^^^^^^^^^
 
-TODO
+The shutdown command from the **Connect** menu will cause the onboard computer controlling the instrument to shutdown.
+
+	1. Open the Acquisition application. Connect to the instrument you want to shutdown.
+	2. From the **Connect** menu, select **Shutdown**.
+	3. A confirmation message box will be shown. 
+	4. Acquistion app can be closed. 
+
+The onboard computer should start up automatically after next connection tentative from Acquisition application.
+
+.. _server_upgrade:
+
+Upgrading
+-----------
+
+Server upgrade package might be provided as tarballs (.tar) or zipped (.zip) archives. 
+An upgrade archive needs to be transferred onto the instrument while it is active, and then the server process should be restarted.
+
+	1. Open Acquisition and connect to the instrument.
+	2. From **Settings** menu, select **Global** action.
+	3. From the objects tree on the left of the new window, double-click on **Support** node.
+	4. Activate the **Status** configuration section by clicking the checkbox.
+	5. Locate the **Available software versions** option and click on the **Send** button on the left of the combobox.
+	6. Navigate through your filesystem to reach the upgrade archive and select it. 
+	7. Double-click on the **Support** node on the left tree to refresh the Support page you are editing.
+	8. Locate again the **Available software versions** and select from the combobox the latest package name you uploaded.
+	9. Expand sub-options by clicking on the ``[+]`` leftmost button.
+	10. Click on **Apply selected software version**.
+	11. A confirmation dialog appears. Acknowledge it and close the global configuration window.
+	12. Return to Acquisition application and command a :ref:`server_restart` to make the changes effective.
 
 
 
