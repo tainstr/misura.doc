@@ -17,7 +17,8 @@ More specific instructions can be found in :ref:`measurement_apps` sections dedi
 Connecting 
 -----------
 
-When you first launch Acquisition software, you have to select a server to connect to. From the **Connect** menu, choose **Server** sub-menu and **Open** action. 
+When you first launch Acquisition software, you have to select a server to connect to. 
+From the **Connect** menu, choose **Server** sub-menu and **Open** action. 
 
 An input dialog will let you specify the server protocol, IP, port and path. In a normal environment, the server address will be:
 
@@ -25,14 +26,15 @@ An input dialog will let you specify the server protocol, IP, port and path. In 
 
 A username and a password will be prompted, and saved for any future connection to that machine. 
 
-Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, and as **Connect**->**Server** menu items.
+Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, 
+and as **Connect** -> **Server** menu items.
 
 Client network configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You should connect to the instrument through a crossover cable or a private hub just between the client PC and the instrument network interface. 
 
-As the instrument provides no network auto-configuration, you will required to manually set-up your network interface in order to be able to reach that IP. 
+As the instrument provides no network auto-configuration, you will be required to manually set-up your network interface in order to be able to reach that IP. 
 
 Factory-installed clients usually have this configuration:
 
@@ -40,7 +42,8 @@ Factory-installed clients usually have this configuration:
 * Netmask: 255.255.255.0
 * Gateway and DNS: None
 
-Follow this `official guide for Windows <https://support.microsoft.com/en-us/help/15089/windows-change-tcp-ip-settings>`_ to disable DHCP and manually set a fixed address.
+Follow this `official guide for Windows <https://support.microsoft.com/en-us/help/15089/windows-change-tcp-ip-settings>`_ 
+to disable DHCP and manually set a fixed address.
 
 Time synchronization
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,11 +59,12 @@ When connecting from multiple clients, you should keep all client synchronized a
 Initializing the Measurement App
 ---------------------------------
 
-After a successful connection you will be shown a list with available :ref:`measurement_apps`, a button for each instrument. Click the corresponding button to select your desired instrument.
+After a successful connection you will be shown a list with available :ref:`measurement_apps`, a button for each instrument. 
+Click the corresponding button to select your desired instrument.
 
-Once the instrument is selected, the machine will start its setup, also called *measurement morphing*.
-
-A "Pending Tasks" dialog will appear in the left panel, showing some details about what is happening.
+Once the instrument is selected, the machine will start its setup, also called *measurement morphing*. A "Pending Tasks" dialog will appear in the left panel, showing some details about what is happening.
+The internal positions of measuring components will change in order to reach the configuration required to perform the requested instrument, 
+as displayed in `this video`_.
 
 This operation can take up to a couple of minutes, depending on the instrument. Any interaction with the application is discouraged until when the dialog disappears.
 
@@ -70,6 +74,7 @@ The menu bar contains:
     * **Connect**: to connect to a different machine or to change measurement app. 
     * **Measure**: allows to re-initialize the instrument from zero, set a delayed start, hide/show user interface components (Test Configuration, Storyboard, Data Plot, Data Table, Log Window), Reload Data from the instrument, Quit client.
     * **Settings**: gives access to advanced configuration panels for the **Instrument** itself, its individual **Devices**, or the full **Global** configuration.
+    * **View**: Hide/show user interface components, like plot window, storyboard, etc.
     * **Help**: client configuration, documentation link opening the documentation you are reading, the :ref:`pending_tasks` dialog, the software information dialog.
 
 On the left side of the window you find a tabbed **Test Configuration** area, showing:
@@ -83,6 +88,7 @@ On the bottom, a bar showing:
     * **Focus** slider and spin-box, to adjust the focus distance. 
     * **Furnace:** option to view and control furnace position (Opened/Closed). Only available if furance is motorized.
     
+.. _this video: https://youtu.be/aWvrPV9Mtt4?t=58s 
 
 .. _live_config: 
     
