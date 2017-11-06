@@ -1,6 +1,5 @@
 .. _thermal_cycle:
 
-=================================
 Thermal Cycle Designer
 =================================
 
@@ -14,9 +13,14 @@ It is divided in three parts:
 
 .. image:: /art/thermal_cycle.png
 
-To set a thermal cycle, fill the upper table with rows. Each row of this table represents a target status to be reached by the furnace as the test execution proceeds, and how that status should be reached by the temperature controller. 
+Editing the thermal cycle table
+-----------------------------------------
 
-Each row will be executed in sequence. When there are no more rows left, the thermal cycle ends, which can cause also the end of the tests depending on how control options are configured.
+To set a thermal cycle, fill the upper table with rows. Each row of this table represents a target status to be reached by the furnace as the test execution proceeds, 
+and how that status should be reached by the temperature controller. 
+
+Each row will be executed in sequence. When there are no more rows left, the thermal cycle ends, 
+which can cause also the end of the tests depending on how control options are configured.
 
 You can load a predefined thermal cycle from the upper-right combo box, showing all saved cycles.
 
@@ -39,6 +43,7 @@ Each time a row is edited or a cycle is loaded, its value is validated against t
 
 .. hint:: The time-temperature curve obtained by filling this table is not the real temperature profile that you will get at the end of the test. This is due to thermal inertia of the furnace, power emission limits, automatic control adjustments and variable length events. 
 
+
 Security limits
 ^^^^^^^^^^^^^^^^
 
@@ -46,7 +51,7 @@ Thermal cycle designer will forbid the creation of temperature ramps which are c
 In particular, both heating rate and temperature columns are limited to maximum values determined in the factory.
  
 
----------------------------------------------
+
 Managing your thermal cycle definitions
 ---------------------------------------------
 
@@ -77,7 +82,6 @@ The preset menu contains the following options:
 * **Delete**: Delete currently viewed definition.
 
 
--------------------------------------
 Inserting a Temperature Ramp (Point)
 -------------------------------------
 
@@ -98,7 +102,7 @@ To add a temperature ramp to the table:
     
 .. hint:: Use negative values to express controlled cooling.
 
---------------------------
+
 Inserting a Checkpoint
 --------------------------
 
@@ -122,7 +126,6 @@ The plot displayes checkpoints as dwell segments with few minutes duration, but 
     When the execution reaches the checkpoint event, suppose the real temperature is 980°C. The checkpoint will cause the controller to keep the setpoint fixed at 1000°C, until the temperature raises above 997°C (1000°C - 3°C tolerance). If this condition is not satisfied in 60min timeout, the control will anyway pass to the next row.
 
 
------------------------------------
 Inserting a Furnace Movement
 -----------------------------------
 
@@ -140,7 +143,7 @@ To add a movement, right click on the previous row and select *Insert movement*.
 
 .. hint:: If the furnace is already in the position configured in the event, nothing will happen. 
 
------------------------------------
+
 Inserting a Natural Cooling
 -----------------------------------
 
@@ -152,7 +155,7 @@ To add a natural cooling, right click on the previous row and select *Insert nat
 
 .. hint:: Set timeout to a negative value to avoid a timeout to occur. This might lead to unlimited acquisition whenever the room temperature is above the target temperature of the event. The suggested minimum target temperature is 40°C.
 
----------------------------------------------
+
 Inserting a Thermocouple Control Transition
 ---------------------------------------------
 
@@ -182,9 +185,6 @@ To add a control transition, right click and select *Insert control transition*.
 .. hint:: This event is meaningful only when your instrument supports more than one thermocouple (samples and/or furnace).
 
 
-
-
--------------------------
 Parametric Templates
 -------------------------
 
@@ -232,7 +232,7 @@ Parameters:
 
 .. stopping_conditions:
     
----------------------------------------------
+
 Additional Control Options
 ---------------------------------------------
 

@@ -8,7 +8,7 @@ Its appearance is very similar to the :ref:`live_acquisition` window, with a cen
 
 The values contained in the configuration tabs (Measure, Sample 0...n, Thermal Cycle) are the ones recorded at the end of the test.
 
-----------------------------
+
 Basic Plotting and Embedding
 ----------------------------
 At the opening of the test, a standard plot is displayed. In order to interact with this plot, switch to ``Results`` tab in the left panel.
@@ -23,7 +23,7 @@ Once you are satisfied by your plot, you can permanently save into the test file
 
 Saved plots can be recalled, overwriting any current plot.
 
----------------------
+
 Re-calculate metadata
 ---------------------
 The logic by which characteristic or important points are identified during the test is saved onto the test file. Through the Browser it is possible to change and replay this logic, for research purposes. 
@@ -34,7 +34,7 @@ The replay is accessible from the  ``Measure`` menu, at the ``Re-calculate metad
 
 .. _versioning:
 
-----------
+
 Versioning
 ----------
 
