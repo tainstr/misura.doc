@@ -22,7 +22,7 @@ The Microscope :ref:`live_acquisition` window additionally comprises:
         
 The workflow for a microscope test follows the general rules described in section :ref:`live_acquisition`.
    
-.. microscope_camera:
+.. _microscope_camera:
     
 Adjusting the camera position
 -----------------------------
@@ -37,7 +37,7 @@ Once the position of the camera has been established you have to put the sample 
 The :term:`Region Of Interest` should then be reduced so that the height of the sample occupies just 3/4 of the active region, and the width is 1/2. If multi-sampling, each region should manually be placed around each sample.    
 The excess of the region dimensions with respect to the sample depend on the limiting sample behaviours. If the melting should be observed, enough region width should be provided for the molten sample to be still framed. If the sample undergoes a huge expansion, the region height should exceed the initial sample width by appropriate amount.     
 
-.. microscope_recording:
+.. _microscope_recording:
     
 Recording Frames and Profiles
 -----------------------------
@@ -49,7 +49,7 @@ The default behaviour is to record profiles and discard frames, to save space.
 This option can be set in :ref:`live_samples` sections independently for each sample. 
 
 
-.. microscope_shapes:
+.. _microscope_shapes:
     
 Standards for Characteristic shapes identification
 --------------------------------------------------
@@ -62,7 +62,7 @@ Basic shape recognition parameters can be affected by expanding sub-options ([+]
 
 
 
-.. microscope_afterShape:
+.. _microscope_afterShape:
 
 
 Stopping the test when a shape is recognized

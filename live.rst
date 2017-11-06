@@ -160,9 +160,12 @@ Each tab contains the details of its sample:
 .. _live_start:
 
 Starting/stopping the test
---------------------------
+---------------------------
 
-Once the test is completely configured, the sample positioned and the furnace moved to its intended initial position, you can start it by clicking on **Start** button in the upper-left toolbar. A confirmation dialog will ask you to review the Status panel. By confirming, the test will start. 
+Once the test is completely configured, the sample positioned and the furnace moved to its intended initial position, 
+you can start it by clicking on **Start** button in the upper-left toolbar. 
+A confirmation dialog will ask you to review the test name, the initial dimension if any, and the system status. 
+By confirming, the test will start. 
 
 The button bar in the upper side of the main window has two more buttons, **Stop** and **Cool**, as explained in :ref:`live_end`.
 
@@ -273,35 +276,41 @@ Storyboard
 ^^^^^^^^^^
 The storyboard displays a list of recorded frames or profiles of a sample. The target sample can be changed with the upper-left combo box. 
 
-The storyboard is available only when images or profiles are saved in the output file. Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
+The storyboard is available only when images or profiles are saved in the output file. 
+Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
 
 It is always visible in the Microscope app. If not, it can be accessed by clicking on menu Measure->Storyboard. 
 
-A label below each image reports the temperature value at which the image was recorded (eg: ``T: 321``). More measured values can be displayed by dragging and dropping nodes from the **Results** tab.
+A label below each image reports the temperature value at which the image was recorded (eg: ``T: 321``). 
+More measured values can be displayed by dragging and dropping nodes from the **Results** tab.
 
 The number of images is fixed (usually five on an horizontal row). 
 
 The user can navigate forward and backward by using the upper slide bar, which will cause the images to update to the recorded data in the position indicated by the slider, relative to total test duration.
 
-Navigating through the images will cause a vertical red line to move back and forth in the :ref:`live_plot`, if visible. The operator can thus view measured values associated with displayed images. 
+Navigating through the images will cause a vertical red line to move back and forth in the :ref:`live_plot`, if visible. 
+The operator can thus view measured values associated with displayed images. 
     
 It is possible to navigate through the images also by dragging and dropping the red bar on the :ref:`live_plot` to different X-axis values.
-
 
 
 .. _live_end:
     
 Ending the test
 ---------------
-The test will naturally end when a termination option is triggered (end of thermal cycle, test duration elapsed, etc). At the end of the test, the output file will be downloaded to the client PC - if the client is connected - or scheduled for download with the :ref:`storage_tasks` mechanism.
+The test will naturally end when a termination option is triggered (end of thermal cycle, test duration elapsed, etc). 
+At the end of the test, the output file will be downloaded to the client PC - if the client is connected - or scheduled for download with the :ref:`storage_tasks` mechanism.
 
 To forcefully stop the test, click **Stop** button in upper-left toolbar. You will be asked to confirm your decision, and if you want to save the partial output file or immediately delete it. 
 
 In certain conditions it is useful to stop the thermal control without stopping the test. Click the **Cool** button in the upper-left toolbar and confirm your decision. The confirmation dialog will warn you that, in order to stop the thermal cycle without stopping the test, the option *Stop after thermal cycle* was implicitly disabled. If you did not provide a maximum duration for your test, or other special termination option, it is possible that your test will never end. 
 
-**Never ending tests** are possible by disabling the *Stop after thermal cycle* option and setting a zero or negative *Maximum test duration*. It's up to you to manually stop these tests.
+**Never ending tests** are possible by disabling the *Stop after thermal cycle* option and setting a zero or negative *Maximum test duration*. 
+It's up to you to manually stop these tests.
 
-Changing termination options has immediate effect on the running test. For example, if the thermal control ended and enable the *Stop after thermal cycle* option, the test will instantly stop. Or, if you set a maximum test duration greater than zero but smaller than current elapsed time.
+Changing termination options has immediate effect on the running test. 
+For example, if the thermal control ended and enable the *Stop after thermal cycle* option, the test will instantly stop. 
+Or, if you set a maximum test duration greater than zero but smaller than current elapsed time.
 
 
 
