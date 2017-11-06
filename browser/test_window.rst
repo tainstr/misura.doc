@@ -31,9 +31,7 @@ The logic by which characteristic or important points are identified during the 
 The replay is accessible from the  ``Measure`` menu, at the ``Re-calculate metadata`` action. All affected values will be recalculated. If the target value is unchanged, refresh it by hovering with the mouse.
 
 
-
 .. _versioning:
-
 
 Versioning
 ----------

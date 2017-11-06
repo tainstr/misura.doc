@@ -1,3 +1,5 @@
+.. include:: /substitutions.txt
+
 .. components:
 
 Components and options 
@@ -11,9 +13,9 @@ and virtual components like sub-samples (Left/Right/Center, Base/Heigt), feedbac
 All these configurations are defined and saved in a consistent hierarchy of components both in the live instrument and in the output file. 
 
 Each component defines several options: all summed up, they represent the **component's configuration**. 
-Component configurations can be saved as **Configuration presets**, and recalled by their name to quickly get the device back in the desired configuration.
+Component configurations can be saved as **Configuration presets**, and recalled by their name to quickly get the component back in the desired configuration.
 
-The user interface displays a device configuration as a **Configuration panel**: 
+The user interface displays a component configuration as a **Configuration panel**: 
 a structured list containing all available options (according to the user's :ref:`access-management`).
 
 Components are organized in a hierarchical way, in order to make easier to search for them and to automate some actions on group of related components.
@@ -23,7 +25,7 @@ Components are organized in a hierarchical way, in order to make easier to searc
 Configuration options 
 -----------------------
 
-|m| offers a unified experience to visualize and edit any variable, generically called **Option**. 
+|m4| offers a unified experience to visualize and edit any variable, generically called **Option**. 
 
 Options can represent proper **Configuration** variables, which the user can change to obtain an effect, 
 but also the **Status** of some server-side variable, or a read-only **Result** from an analysis.
@@ -53,7 +55,7 @@ The options's context menu can be visualized by right-clicking on the option's l
 
 
 Configuration panel
-^^^^^^^^^^^^^^^^^^^^
+-----------------------
 A configuration panel lists all options related to a single component. For example, left-side panel in :ref:`live_config`, is a configuration panel. 
 
 It can contain tabs, one for each major configuration section. 
