@@ -228,6 +228,8 @@ Parameters:
 
 #. Target temperature
 
+Example: target temperature = 1600°C produces:
+
 .. image:: /art/thermal_cycle_maxspeed.png
 
 .. stopping_conditions:
