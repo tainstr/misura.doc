@@ -3,14 +3,14 @@
 .. _quickstart_heating_microscope:
     
 Quick Start: Running an Heating Microscope Test
-=================================================
+===============================================
 
-While the general :ref:`live` instructions apply also for the Heating Microscope, this section describes specific topics which should be considered to carry out microscopy tests.
+While the general :ref:`live_acquisition` instructions apply also for the Heating Microscope, this section describes specific topics which should be considered to carry out microscopy tests.
 
 .. _microscope_window:
     
 Microscope Acquisition Window
--------------------------------
+-----------------------------
 
 The Microscope :ref:`live_acquisition` window additionally comprises:
     
@@ -25,7 +25,7 @@ The workflow for a microscope test follows the general rules described in sectio
 .. microscope_camera:
     
 Adjusting the camera position
---------------------------------
+-----------------------------
 :term:`ODP` cameras are mounted on two motorized axes: the height and the focus. Older/simpler models might still have manual positioning with micrometric translation stages. 
     
 The initial position of the camera should be automatically reached during instrument initialization, as described in :ref:`camera_motion_control`.
@@ -40,7 +40,7 @@ The excess of the region dimensions with respect to the sample depend on the lim
 .. microscope_recording:
     
 Recording Frames and Profiles
--------------------------------
+-----------------------------
 
 |m| records can record raw frames, as they are received from the camera, and/or analyzed (x,y) profiles produced by the morphometric analysis. 
 
@@ -52,7 +52,7 @@ This option can be set in :ref:`live_samples` sections independently for each sa
 .. microscope_shapes:
     
 Standards for Characteristic shapes identification
----------------------------------------------------
+--------------------------------------------------
 
 Characteristic shapes are displayed in the :ref:`live_samples` tab in **Test Configuration** side area, as a Time/Temperature :ref:`metadata` label. 
     
@@ -60,9 +60,13 @@ Basic shape recognition parameters can be affected by expanding sub-options ([+]
 
 |m| always calculate shapes according to its advanced morphometric logic, making use of 3D extrapolations and 
 
+
+
 .. microscope_afterShape:
+
+
 Stopping the test when a shape is recognized
----------------------------------------------
+--------------------------------------------
 
 A Microscope test can be automatically interrupted when a characteristic shape is recognized. To activate this termination option:
     
