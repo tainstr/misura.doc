@@ -14,6 +14,12 @@ Prerequisites
   RAM for GNU/Linux and 4GB of system RAM for |win|.
 * 2Ghz, dual core processor
 
+Dependencies:
+* The latest Windows Visual C++ 2008 Redistributable package, x86 version (independently on your OS being 64 or 32 bits): `vcredist`_.
+* You will need `Xvid`_ MPEG4 video compression filter in order to export compressed videos of recorded frames.
+
+.. _vcredist: https://www.microsoft.com/en-us/download/details.aspx?id=29
+.. _Xvid: https://www.xvid.com/download/
 
 =======
 |win|
@@ -36,9 +42,7 @@ Precompiled executables should be obtained by contacting directly TA Instruments
 	from the relative position they have in the extracted folder will cause severe errors. 
 	Create shortcuts if you want to easily reach executables from your preferred positions.
 	
-.. hint:: You will need `Xvid`_ MPEG4 video compression filter in order to export compressed videos of recorded frames.
 
-.. _Xvid: https://www.xvid.com/download/
 
 
 ----------
