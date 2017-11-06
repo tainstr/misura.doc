@@ -35,6 +35,10 @@ Precompiled executables should be obtained by contacting directly TA Instruments
 .. hint:: You should extract all contents of the zip file. Moving or copying the executables somewhere else 
 	from the relative position they have in the extracted folder will cause severe errors. 
 	Create shortcuts if you want to easily reach executables from your preferred positions.
+	
+.. hint:: You will need `Xvid`_ MPEG4 video compression filter in order to export compressed videos of recorded frames.
+
+.. _Xvid: https://www.xvid.com/download/
 
 
 ----------
