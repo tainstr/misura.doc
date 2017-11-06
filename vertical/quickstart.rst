@@ -3,15 +3,14 @@
 .. _quickstart_vertical:
     
 Quick Start: Running a Vertical Dilatometer test
-=================================================
-This section documents specific dilatometric functions. 
-Read :ref:`live_acquisition` for a general description of the acquisition window.
+================================================
+This section documents specific dilatometric functions. Read :ref:`live_acquisition` for a general description of the acquisition window.
     
  
 .. _vertical_window:
     
 Vertical Dilatometer Acquisition Window
---------------------------------------------
+---------------------------------------
 
 The Vertical Dilatometer :ref:`live_acquisition` window additionally comprises:
     
@@ -25,7 +24,7 @@ The workflow for an vertical dilatometer test follows the general rules describe
 .. vertical_camera:
     
 Adjusting cameras position
---------------------------------
+--------------------------
     
 The initial position of the camera should be automatically reached during instrument initialization, as described in :ref:`camera_motion_control`.
     
@@ -40,7 +39,7 @@ It is advisable to close the furnace before starting a new tests. Vibrations pro
 .. vertical_dimension:
 
 Setting initial sample dimension
-----------------------------------
+--------------------------------
 
 The Vertical Optical Dilatometer measures changes in length, but cannot measure the initial length of the sample. 
 
@@ -49,11 +48,11 @@ The operator must measure it before starting a test, by using a high precision c
 .. vertical_stopping:
     
 Stopping the test on excess deformation
------------------------------------------
+---------------------------------------
 
 The vertical dilatometer is designed to follow the sample until complete melting. Nevertheless, this might pose the risk of sample flowing below the sample holder if its viscosity drops down enough.
 
-In thermal cycle tab, under ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
+In thermal cycle tab, under :ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
     
 The security limits are +25 and -50 and are active by default.
     

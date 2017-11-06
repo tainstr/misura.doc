@@ -3,7 +3,7 @@
 .. _live_acquisition:
 
 Live Acquisition
-==================
+================
 
 The Live Acquisition software allows to carry on any kind of measurement available on a Misura platform. 
 
@@ -14,11 +14,10 @@ More specific instructions can be found in :ref:`measurement_apps` sections dedi
 
 .. _live_connect:
     
-Connecting 
------------
+Connecting
+----------
 
-When you first launch Acquisition software, you have to select a server to connect to. 
-From the **Connect** menu, choose **Server** sub-menu and **Open** action. 
+When you first launch Acquisition software, you have to select a server to connect to. From the **Connect** menu, choose **Server** sub-menu and **Open** action. 
 
 An input dialog will let you specify the server protocol, IP, port and path. In a normal environment, the server address will be:
 
@@ -26,11 +25,10 @@ An input dialog will let you specify the server protocol, IP, port and path. In 
 
 A username and a password will be prompted, and saved for any future connection to that machine. 
 
-Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, 
-and as **Connect** -> **Server** menu items.
+Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, and as **Connect** -> **Server** menu items.
 
 Client network configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You should connect to the instrument through a crossover cable or a private hub just between the client PC and the instrument network interface. 
 
@@ -42,11 +40,10 @@ Factory-installed clients usually have this configuration:
 * Netmask: 255.255.255.0
 * Gateway and DNS: None
 
-Follow this `official guide for Windows <https://support.microsoft.com/en-us/help/15089/windows-change-tcp-ip-settings>`_ 
-to disable DHCP and manually set a fixed address.
+Follow this `official guide for Windows <https://support.microsoft.com/en-us/help/15089/windows-change-tcp-ip-settings>`_ to disable DHCP and manually set a fixed address.
 
 Time synchronization
-^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 The time between instrument and client computer is kept synchronized. The user may periodically see a warning message upon connection, asking to re-synchronize times. If replied positively, the instrument will restart for synchronization. 
 
 It's up to the user keep the client's computer time up-to-date, manually or by using exact time services.
@@ -57,14 +54,11 @@ When connecting from multiple clients, you should keep all client synchronized a
 .. _live_init:
     
 Initializing the Measurement App
----------------------------------
+--------------------------------
 
-After a successful connection you will be shown a list with available :ref:`measurement_apps`, a button for each instrument. 
-Click the corresponding button to select your desired instrument.
+After a successful connection you will be shown a list with available :ref:`measurement_apps`, a button for each instrument. Click the corresponding button to select your desired instrument.
 
-Once the instrument is selected, the machine will start its setup, also called *measurement morphing*. A "Pending Tasks" dialog will appear in the left panel, showing some details about what is happening.
-The internal positions of measuring components will change in order to reach the configuration required to perform the requested instrument, 
-as displayed in `this video`_.
+Once the instrument is selected, the machine will start its setup, also called *measurement morphing*. A "Pending Tasks" dialog will appear in the left panel, showing some details about what is happening. The internal positions of measuring components will change in order to reach the configuration required to perform the requested instrument, as displayed in `this video`_.
 
 This operation can take up to a couple of minutes, depending on the instrument. Any interaction with the application is discouraged until when the dialog disappears.
 
@@ -93,12 +87,12 @@ On the bottom, a bar showing:
 .. _live_config: 
     
 Configuring the test
-----------------------
+--------------------
 
 The following paragraphs explain common procedures or concepts needed to carry out any test with |m|.
 
 Moving the furnace
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 The first step of test configuration is placing the sample in the right position. If the furnace is motorized, you should always open it by using the option **Is the furnace closed?** in the Status tab, or the **Furnace:** box in the bottom bar. That option should be changed to the desired position: *Closed* or *Opened*. 
 
 Once the sample is positioned and correctly framed, it is advisable to close the furnace using the same option, and proceed with test configuration.
@@ -106,7 +100,7 @@ Once the sample is positioned and correctly framed, it is advisable to close the
 .. _live_names:
 
 Measure and Sample names
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 The test name can be directly set in the Status panel, or in the :ref:`live_measure` tab. 
 
 This is the name of your measurement, but the sample (and each sample) can have a different name. Sample names can be set in their Sample<N> tab, in *Name* option (see :ref:`live_samples`).
@@ -119,8 +113,8 @@ The test name will also be used as the output file name. If a file with the same
 
 .. _live_thermal:
 
-Thermal cycle 
-^^^^^^^^^^^^^^
+Thermal cycle
+^^^^^^^^^^^^^
 The **Thermal Cycle** tab in the Test Configuration area allows to load a thermal cycle preset or to design a new one. Refer to :ref:`thermal_cycle` for a detailed explanation.
 
 Additional test termination options can be configured in the Measure and Sample sections, depending on the :ref:`measurement_apps` you are using. 
@@ -128,7 +122,7 @@ Additional test termination options can be configured in the Measure and Sample 
 .. _live_measure:
 
 Measure
----------
+-------
 
 This tab contains:
     
@@ -166,7 +160,7 @@ Each tab contains the details of its sample:
 .. _live_start:
 
 Starting/stopping the test
-----------------------------
+--------------------------
 
 Once the test is completely configured, the sample positioned and the furnace moved to its intended initial position, you can start it by clicking on **Start** button in the upper-left toolbar. A confirmation dialog will ask you to review the Status panel. By confirming, the test will start. 
 
@@ -175,7 +169,7 @@ The button bar in the upper side of the main window has two more buttons, **Stop
 .. _delayed_start:
     
 Delayed start
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 To schedule a test to start at a specified date in the future, you can use the **Delayed start** feature, available from the **Measure** menu. 
 
 The Delayed Test Start dialog will appear with the options needed to control its behaviour. 
@@ -183,14 +177,9 @@ The Delayed Test Start dialog will appear with the options needed to control its
 * **Enable delayed start**: click on the checkbox to engage the delayed start. When the configured time is reached, the test will automatically start.
 * **Delayed start date**: Set date and time when the test will start. 
 
-Then 3 fields allows to understand how and when the test will be started.
-* **Target instrument**: the current instrument app name. It will not be possible to change instrument a delayed start is already configured.
-* **Remaining time**: a countdown showing remaining time to test start
-* **Operator**: the user name of the operator who set the delayed start
+Then 3 fields allows to understand how and when the test will be started. * **Target instrument**: the current instrument app name. It will not be possible to change instrument a delayed start is already configured. * **Remaining time**: a countdown showing remaining time to test start * **Operator**: the user name of the operator who set the delayed start
 
-Finally, 2 buttons:
-* **Save and exit**: close the client application. The delayed start will remain active and the test will be started at the configured time, even if no client is connected to the instrument.
-* **Abort delayed start**: cancel delayed start and dismiss the dialog. 
+Finally, 2 buttons: * **Save and exit**: close the client application. The delayed start will remain active and the test will be started at the configured time, even if no client is connected to the instrument. * **Abort delayed start**: cancel delayed start and dismiss the dialog. 
 
 The dialog will remain active until the test starts. If you close the client application or click **Save and exit**, the delayed start will remain effective. If you later reconnect to the instrument, the delayed start dialog will pop up again, until test starts or delayed start is aborted. 
 
@@ -200,7 +189,7 @@ Dismissing the dialog equals aborting the delayed start.
 .. _live_interact:
     
 Interacting with a running test
-----------------------------------
+-------------------------------
 
 While the test is running it is possible to perform most of the data visualization and processing operations which are available when accessing to a finished test output file. 
 
@@ -212,7 +201,7 @@ While the test is running it is possible to perform most of the data visualizati
 .. _live_status:
     
 Status panel
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 The Status panel will update showing relevant status, configuration options and real-time output values. 
 
 It always contains information about:
@@ -224,7 +213,7 @@ It always contains information about:
 
 Thermal control status cannot be True if the acquistion status is False. In other words, temperature cannot be controlled by a thermal cycle outside of a running test. 
 
-On the opposite it is possible that the thermal control is turned off during a running test. This happens if the test was set to do not end with the thermal cycle and its target duration was longer than the duration of the thermal cycle. The operator can also manually interrupt the thermal control anytime by pressing the ``Cool`` button - without stopping the acquistion (see below ref:`live_end`).
+On the opposite it is possible that the thermal control is turned off during a running test. This happens if the test was set to do not end with the thermal cycle and its target duration was longer than the duration of the thermal cycle. The operator can also manually interrupt the thermal control anytime by pressing the ``Cool`` button - without stopping the acquistion (see below :ref:`live_end`).
 
 The Status panel also contains real-time thermal control parameters, as:
     
@@ -245,10 +234,10 @@ Additionally, the Status panel contains realtime values depending on the current
 .. _live_plot:
     
 Data Plot
-^^^^^^^^^^^^^^^^
+^^^^^^^^^
 The Data Plot is accessible by clicking on menu Measure->Data Plot. It is initialized at the start of the test with a default plot showing the most relevant measured property against time. 
 
-The plot can be edited and customized exactly as you would offline using the ref:`browser` or the ref:`plotting`. See :ref:`data_plot` for more help.
+The plot can be edited and customized exactly as you would offline using the :ref:`browser` or the :ref:`plotting`. See :ref:`data_plot` for more help.
 
 .. warning:: 
     It is advisable not to build complex plots during live acquisition, as you will loose all your careful work when the test ends. Moreover, complex data operations might slow down the user interface and lead it to a complete freeze, as they are entirely re-computed each time a new data point is received. If this happens, close the Live Acquisition window and reconnect to the running machine. Plotting data has no effect on test execution, measurement, and data collection.
@@ -260,7 +249,7 @@ The plot can be edited and customized exactly as you would offline using the ref
 .. live_results:
     
 Results
-^^^^^^^^
+^^^^^^^
 
 The *Results* tab contains another series of tabs, which are:
     
@@ -273,7 +262,7 @@ The *Results* tab contains another series of tabs, which are:
 .. _live_table:
     
 Data Table
-^^^^^^^^^^^
+^^^^^^^^^^
 The Data table is accessible by clicking on menu Measure->Data Table. It displays one column for each :term:`Loaded Dataset`. 
 
 New data points are dynamically added at the end of the table. The table can be exported to ``*.csv`` file format anytime by right-clicking on the header.
@@ -281,7 +270,7 @@ New data points are dynamically added at the end of the table. The table can be 
 .. _storyboard:
     
 Storyboard
-^^^^^^^^^^^
+^^^^^^^^^^
 The storyboard displays a list of recorded frames or profiles of a sample. The target sample can be changed with the upper-left combo box. 
 
 The storyboard is available only when images or profiles are saved in the output file. Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
@@ -303,7 +292,7 @@ It is possible to navigate through the images also by dragging and dropping the 
 .. _live_end:
     
 Ending the test
-----------------
+---------------
 The test will naturally end when a termination option is triggered (end of thermal cycle, test duration elapsed, etc). At the end of the test, the output file will be downloaded to the client PC - if the client is connected - or scheduled for download with the :ref:`storage_tasks` mechanism.
 
 To forcefully stop the test, click **Stop** button in upper-left toolbar. You will be asked to confirm your decision, and if you want to save the partial output file or immediately delete it. 

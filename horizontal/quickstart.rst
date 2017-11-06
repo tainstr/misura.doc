@@ -3,15 +3,14 @@
 .. _quickstart_horizontal:
     
 Quick Start: Running an Horizontal Dilatometer Test
-=====================================================
+===================================================
 
-This section documents specific dilatometric functions. 
-Read :ref:`live_acquisition` for a general description of the acquisition window.
+This section documents specific dilatometric functions. Read :ref:`live_acquisition` for a general description of the acquisition window.
 
 .. _horizontal_window:
     
 Horizontal Dilatometer Acquisition Window
---------------------------------------------
+-----------------------------------------
 
 The Horizontal Dilatometer :ref:`live_acquisition` window additionally comprises:
     
@@ -25,7 +24,7 @@ The workflow for an horizontal dilatometer test follows the general rules descri
 .. horizontal_camera:
     
 Adjusting cameras position
---------------------------------
+--------------------------
     
 The initial position of the camera should be automatically reached during instrument initialization, as described in :ref:`camera_motion_control`.
     
@@ -40,7 +39,7 @@ It is advisable to close the furnace before starting a new tests. Vibrations pro
 .. horizontal_dimension:
 
 Setting initial sample dimension
-----------------------------------
+--------------------------------
 
 The Horizontal Optical Dilatometer measures changes in length, but cannot measure the initial length of the sample. 
 
@@ -48,9 +47,9 @@ The operator must measure it before starting a test, by using a high precision c
 
 .. horizontal_stopping:
 Stopping the test on excess deformation
------------------------------------------
+---------------------------------------
 
-In thermal cycle tab, under ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
+In thermal cycle tab, under :ref:`stopping_conditions` section, the Horizontal Optical Dilatometers offers a security option to stop the test whenever deformation exceeds a configurable threshold, **Stop on deformation excess**. 
     
 The security limits are +10 and -10 and are active by default.
 
