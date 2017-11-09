@@ -14,6 +14,7 @@ It is divided in three parts:
 3. The lower area is usually hidden and can be toggled via **Plot** button above the table. Displays a plot of temperature (red) and heating rate (blue) against forecasted time.
 
 .. image:: /art/thermal_cycle.png
+	:width:  50 %
 
 Editing the thermal cycle table
 -----------------------------------------
@@ -220,6 +221,7 @@ Parameters:
 Example: up to 500°C, at 10°C/min. Than increase 20°C at 5°C/min and wait 8 minutes, for 7 times.
 
 .. image:: /art/thermal_cycle_steps.png
+	:width:  50 %
 
 Maximize speed
 ^^^^^^^^^^^^^^^
@@ -233,6 +235,7 @@ Parameters:
 Example: target temperature = 1600°C produces:
 
 .. image:: /art/thermal_cycle_maxspeed.png
+	:width:  50 %
 
 .. stopping_conditions:
     

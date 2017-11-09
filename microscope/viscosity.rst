@@ -43,6 +43,7 @@ It is necessary to open the softening test of the material you are interested in
 The viscosity parameters window will open:
 
 .. image:: viscosity_parameters.png
+	:width:  50 %
 
 The **Temperature dataset** field refers to the temperature values which will be used to calculate the viscosity. It is pre-compiled and should not be modified.
 
@@ -66,6 +67,7 @@ The viscosity data are expressed as viscosity logarithm (log η), in Poises.
 An example of viscosity curve obtained for a glass is provided below: 
 
 .. image:: viscosity_curve.png
+	:width:  50 %
 
 Choosing the known temperature points
 ---------------------------------------
@@ -97,6 +99,7 @@ We identify manually the sintering beginning point in correspondence of the shri
 as shown in the following graph. The half sphere temperature is automatically identified by the software. 
 
 .. image:: viscosity_microscope.png
+	:width:  50 %
 
 Then, you should insert the values of glass transition (“Glass transition DIL”) obtained from the dilatometric test performed with MISURA ODLT, 
 sintering beginning (“Sintering beginning HSM”) and half sphere (“Half sphere HSM”), obtained with the heating microscope. 

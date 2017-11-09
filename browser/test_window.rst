@@ -64,4 +64,5 @@ Below these version-submenu actions, all associated plots are listed as sub-menu
 * ``Delete plot``: delete that plot.
 
 .. image:: /art/version_menu.png
+	:width:  50 %
 

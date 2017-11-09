@@ -19,7 +19,7 @@ Where:
 
 The analysis is split in two phases:
 
-1. During a normal :ref:`microscope` test, adimensional shape parameters are calculated by solving the Young-Laplace equation for the sessile drop.
+1. During a normal :ref:`heating_microscope` test, adimensional shape parameters are calculated by solving the Young-Laplace equation for the sessile drop.
 2. Once the test is finished, it can be loaded in the :ref:`browser` to calculate the surface tension from the adimensional parameters. In this phase the user should provide additional material's and environmental properties like density, thermal expansion, atmosphere etc.
 
 This design allows the user to change/correct any material property without the need to re-run the entire analysis.
@@ -55,6 +55,7 @@ The surface tension plugin will ask to the user all remaining physical sample pr
 from the adimensional parameters calculated by the image analysis.
 
 .. image:: surface_tension_plugin.png
+	:width: 50 %
 
 Pre-compiled fields:
 
