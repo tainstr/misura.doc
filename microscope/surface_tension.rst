@@ -24,7 +24,7 @@ The analysis is split in two phases:
 
 This design allows the user to change/correct any material property without the need to re-run the entire analysis.
 
-Phase 1: Activating the Sessile Drop
+Activating the Sessile Drop
 -------------------------------------
 
 Sessile drop analysis can be activated in each sample's Analyzer configuration panel, by setting to `True` the **Enable sessile drop analysis** (default=`False`) option.
@@ -46,7 +46,7 @@ During this phase, Misura will create two adimensional sample datasets which con
 
 
 
-Phase 2: The Surface Tension plugin
+The Surface Tension plugin
 -------------------------------------
 If the sessile drop analysis was enabled during the test execution, 
 the Surface Tension plugin can be called from the ``sample<N>`` node corresponding to the analyzed sample, in the :ref:`navigator`.
@@ -55,21 +55,23 @@ The surface tension plugin will ask to the user all remaining physical sample pr
 from the adimensional parameters calculated by the image analysis.
 
 .. image:: surface_tension_plugin.png
-	:width: 50 %
+	:scale: 50 %
 
-Pre-compiled fields:
+Pre-compiled fields
+^^^^^^^^^^^^^^^^^^^^^
 
 * **Capillary factor dataset**: this pre-compiled field contains the reference to the adimensional `beta` dataset obtained by the sessile drop analysis.
 * **Scaling factor dataset**: referring to the adimensional `r0` dataset.
 * **Sample temperature**: referring to the sample's temperature dataset.
 * **Output dataset name**: the name where to save the calculated surface tension. It is possible to save multiple datasets corresponding to different configurations.
 
-Sample density:
+Sample density
+^^^^^^^^^^^^^^^^^^^^^
 
 * **Reference sample density**: density of the sample at the reference temperature.
 * **Reference sample temperature**: reference temperature at which the reference sample density is measured.
 
-Sample thermal expansion, which will be used to correct sample density by temperature:
+Sample thermal expansion, which Will be used to correct sample density by temperature:
 
 * **Sample expansion**: if left blank, assume no expansion (and no density change). Else, point to an expansion % dataset for the material (height, volume or the expansion curve coming from a dilatometer).
 * **Sample expansion temperature**: if the sample expansion datasets comes from a different test (a dilatometer) this field should point to the sample's temperature of that test.
@@ -77,7 +79,8 @@ Sample thermal expansion, which will be used to correct sample density by temper
 * **Extrapolate above temperature**: do no trues expansion values above this temperature. Use linear extrapolation instead.
 * **Sample expansion dimension**: specify if the Sample expansion dataset is linear or volumetric.
 
-Atmosphere density:
+Atmosphere density
+^^^^^^^^^^^^^^^^^^^^^
 
 * **Reference gas density**: Gas density at the reference temperature.
 * **Reference gas temperature**: Reference density at which the reference gas density is measured.
