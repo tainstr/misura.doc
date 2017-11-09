@@ -8,7 +8,7 @@ Surface Tension with the Sessile Drop method
 The method relies on the numerical solution of the Young-Laplace equation for the surface tension of a sessile drop:
 
 .. math::
-	p_1 - p_2 = \gamma (\frac{1}{R_1} + \frac{1}{R_2}
+	p_1 - p_2 = \gamma (\frac{1}{R_1} + \frac{1}{R_2})
 	
 Where:
 * :math:`p_1` is the pressure on the internal wall of the drop (material against atmosphere)
@@ -69,6 +69,7 @@ Sample density:
 * **Reference sample temperature**: reference temperature at which the reference sample density is measured.
 
 Sample thermal expansion, which will be used to correct sample density by temperature:
+
 * **Sample expansion**: if left blank, assume no expansion (and no density change). Else, point to an expansion % dataset for the material (height, volume or the expansion curve coming from a dilatometer).
 * **Sample expansion temperature**: if the sample expansion datasets comes from a different test (a dilatometer) this field should point to the sample's temperature of that test.
 * **Extrapolate below temperature**: do no trust expansion values below this temperature. Use linear extrapolation instead.
