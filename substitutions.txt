@@ -9,3 +9,5 @@
 .. |u| replace:: Canonical Ubuntu\ |trade| GNU/Linux
 .. |ults| replace:: Ubuntu\ |trade| 14.04 LTS
 .. |py| replace:: Python\ |trade|
+
+.. |mx| replace:: MorphometriX
