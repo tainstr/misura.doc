@@ -1,6 +1,6 @@
 .. include:: ../substitutions.txt
 
-.. _horizontal_sample_preparation:
+.. _vertical_sample_preparation:
     
 Sample preparation for the Vertical Optical Dilatometer 
 ==============================================================

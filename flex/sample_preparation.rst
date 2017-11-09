@@ -1,6 +1,6 @@
 .. include:: ../substitutions.txt
 
-.. _horizontal_sample_preparation:
+.. _flex_sample_preparation:
     
 Sample preparation for the Absolute Optical Fleximeter
 ==============================================================

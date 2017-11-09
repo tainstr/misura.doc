@@ -1,3 +1,5 @@
+.. include:: ../substitutions.txt
+
 .. _thermal_cycle:
 
 Thermal Cycle Designer
@@ -63,7 +65,7 @@ we should understand that in any given moment 3 thermal cycle definitions exists
 #. That same definition is also **displayed** in the table. The user can then edit it. While he is editing, the displayed definition can diverge from the preset from which it was loaded. The user can then **apply** the displayed configuration - making it also active, and/or **save** it with a name.
 
 These distinctions allows the maximum freedom of editing without compromising saved values or without undergoing automatic consistency and security checks from the instrument.
-|m| will warn the user if there is any unsaved or non-applied change, by coloring related controls in red.
+|m4| will warn the user if there is any unsaved or non-applied change, by coloring related controls in red.
 
 * **Read**: Read the thermal cycle currently active on the instrument. If the thermal cycle on the instrument is different than what contained in the table, this button's text would be red.
 * **Apply**: Transmit the thermal cycle defined in the table to the instrument. If the remote cycle is different than the displayed one, this button will be red.
