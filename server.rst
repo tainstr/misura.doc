@@ -71,18 +71,31 @@ Upgrading
 Server upgrade package might be provided as tarballs (.tar) or zipped (.zip) archives. 
 An upgrade archive needs to be transferred onto the instrument while it is active, and then the server process should be restarted.
 
-	1. Open Acquisition and connect to the instrument.
-	2. From **Settings** menu, select **Global** action.
-	3. From the objects tree on the left of the new window, double-click on **Support** node.
-	4. Activate the **Status** configuration section by clicking the checkbox.
-	5. Locate the **Available software versions** option and click on the **Send** button on the left of the combobox.
-	6. Navigate through your filesystem to reach the upgrade archive and select it. 
-	7. Double-click on the **Support** node on the left tree to refresh the Support page you are editing.
-	8. Locate again the **Available software versions** and select from the combobox the latest package name you uploaded.
-	9. Expand sub-options by clicking on the ``[+]`` leftmost button.
-	10. Click on **Apply selected software version**.
-	11. A confirmation dialog appears. Acknowledge it and close the global configuration window.
-	12. Return to Acquisition application and command a :ref:`server_restart` to make the changes effective.
+Follow these steps:
+
+	#. :ref:`live_connect <Connect>` to the server with `admin` rights.
+	#. From main window menu: `Settings > Send update package`.
+	#. Navigate to the update package (`misura_pkg_<version>.tar`) and send.
+	#. The server will reboot and the client will shortly close itself.
+	#. When you reconnect to the server, it will be at the selected version.
+
+You can check package name and last update date in the sub-options **Last applied package name** and **date** 
+in the **Support** configuration node (`Settings > Global` menu action).
+
+Downgrading
+^^^^^^^^^^^^
+Each upgrade package which is sent to the server remains saved locally, so that it is possible to rollback any previous release.
+Since this operation is much less usual, the procedure is less straightforward than upgrading.
+
+	#. Open Acquisition and connect to the instrument.
+	#. From **Settings** menu, select **Global** action.
+	#. From the objects tree on the left of the new window, double-click on **Support** node.
+	#. Activate the **Status** configuration section by clicking the checkbox.
+	#. Locate the **Available software versions** option and select the version you want to revert to.
+	#. Expand sub-options by clicking on the ``[+]`` leftmost button.
+	#. Click on **Apply selected software version**.
+	#. A confirmation dialog appears. Acknowledge it and close the global configuration window.
+	#. Return to Acquisition application and command a :ref:`server_restart` to make the changes effective.
 
 
 
