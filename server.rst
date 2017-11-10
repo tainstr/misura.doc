@@ -73,7 +73,7 @@ An upgrade archive needs to be transferred onto the instrument while it is activ
 
 Follow these steps:
 
-	#. :ref:`live_connect <Connect>` to the server with `admin` rights.
+	#. :ref:`Connect <live_connect>` to the server with `admin` rights.
 	#. From main window menu: `Settings > Send update package`.
 	#. Navigate to the update package (`misura_pkg_<version>.tar`) and send.
 	#. The server will reboot and the client will shortly close itself.
