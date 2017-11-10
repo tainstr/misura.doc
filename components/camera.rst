@@ -40,9 +40,10 @@ File names will have the format  ``<name>_smp<N>_<seq>.jpg`` where ``<seq>`` is 
     
 Simulation 
 ^^^^^^^^^^^^^^^
-The **Simulation** flag activates image analysis on the received frames. This flag can be changed only when no test is running. 
+The **Analysis** flag activates image analysis on the received frames. This flag can be changed only when no test is running. 
 
-Simulation can be used before starting a real test, in order to validate the image quality. For example, to check that sample borders and limits are correctly detected, or that motors react in the right way to sample movements.
+Simulation can be used before starting a real test, in order to validate the image quality. 
+For example, to check that sample borders and limits are correctly detected, or that motors react in the right way to sample movements.
 
 .. _camera_imaging:
 
@@ -110,27 +111,43 @@ In case multiple cameras are used (horizontal dilatometer or fleximeter), care m
 Focusing the sample is an iterative procedure, where the focus slider is moved back and forth until the optimal focus distance is found. 
 
 
-.. _camera_analysis:
+.. _camera_morphometrics:
     
-Analysis
+Morphometrics
 ------------------
 
-The **Analysis** submenu allows to visualize some of the results obtained from image analysis. The results will be displayed as lines overlaid on the original frames. 
+The **Morphometrics** submenu allows to visualize some of the results obtained from image analysis. 
+The results will be displayed as lines overlaid on the original frames. 
 
-The most useful analysis overlay is the :term:`Regions of Interest`, which can be activated by the **View Regions** action. Each sample defined for the camera will be surrounded by a colored rectangle, representing the area of analysis. This rectangle can be resized by dragging and dropping two hook points on the top-left and bottom-right corners.
+The most useful analysis overlay is the :term:`Regions of Interest`, which can be activated by the **View Regions** action. 
+Each sample defined for the camera will be surrounded by a colored rectangle, representing the area of analysis. 
+This rectangle can be resized by dragging and dropping two hook points on the top-left and bottom-right corners.
     
 Restricting the region of interest allows to individually select samples when more than one is viewed by the same camera. It is also useful to filter out imperfections, like dirt on holding plate or camera CCD.
     
 The **Reset Regions** action will restore the default region sizes.
 
-Then we have 6 overlays. 
+Then we have ovalyays, which are realtime visualization of some aspects of the analysis being performed.
 
+Generic overlays:
+
+	* **Grids**: this overlay will draw a grid over each sample. 
     * **Profile**: the border detected as the sample will be overlaid by a blue line, and the area of the sample with a faded blue.
-    * **Points**: relevant profile point are highlighted with circles.
     * **Values Label**: a movable label is added. The label will contain lines in the form ``name: value``, where name stays for any sample option and value shows the current value for that option (e.g.: height).
+    * **Pixel Calibration**: the :ref:`pixel_calibration` tool discussed below.
+     
+:ref:`heating_microscope` overlays:
+
+    * **Points**: relevant profile point are highlighted with circles.
     * **Base and Height**: (only for :ref:`heating_microscope`) two perpendicular segments starting from the bottom-left starting point of the sample, representing base and height.
     * **Circle Fitting**: (only for :ref:`heating_microscope`) a circle representing the best circular fitting to the profile.
-    * **Pixel Calibration**: the :ref:`pixel_calibration` tool discussed below.
+
+:ref:`horizontal_dilatometer`, :ref:`vertical_dilatometer`, :ref:`fleximeter` overlays:
+
+* **Reference line**: position of the sample border at the beginning of the test.
+* **Regression line**: actual detected position of the sample border.
+* **Filtered profile**: profile fragments which were actually included in the calcuation of the regression line, after noise filtering.
+
 
 .. _camera_samples:
     
