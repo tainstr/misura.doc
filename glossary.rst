@@ -70,4 +70,6 @@ Glossary
     Global Focus
         The focus distance can be adjusted for all cameras at the same time by means of a motorized translation stage. It is not possible to independently adjust the focus of each single camera. This is actually intentional as a discrepancy in focus distances usually suggests a sub-optimal sample orientation.
         
+    HDF5
+    	The `Hierarchical Dataset Format v5 <https://support.hdfgroup.org/HDF5/>`_ file format used to store test data. Has `.h5` extension.
         

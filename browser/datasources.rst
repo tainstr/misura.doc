@@ -5,11 +5,27 @@
 Data Sources
 ============
 
-Data Sources is always the first Browser's tab, and is not possible to close it. The tab is mostly empty, displaying the gray background. Any Misura file (extension: `.h5`) can be dragged from your file system browser and dropped into this gray area. The file will be immediately opened in a new tab.
+Data Sources is always the first Browser's tab, and is not possible to close it. The tab is mostly empty, displaying the gray background. 
 
-The only visible sub-window on startup is ``Recent Data Sources``, displaying two columns: one for recently opened files; one for recently accessed databases. More columns might be displayed by plugins.
+Any :term:`HDF5` Misura file can be dragged from your file system browser and dropped into this gray area. 
+The file will be immediately opened in a new tab.
 
-The recently opened tests listing is a quick way to directly re-open any recent file, no matter if it is indexed in a database. If a recent file is double-clicked or selected from the file system, it is opened in a new Test Window, in a new tab. The more recently accessed file is placed at the top of the list.
+The only visible sub-window on startup is ``Recent Data Sources``, displaying two columns: one for recently opened files; one for recently accessed databases. 
+More columns might be displayed by plugins.
+
+The recently opened tests listing is a quick way to directly re-open any recent file, no matter if it is indexed in a database. 
+To open a file from the recent files column, either:
+
+* Double-click on the file
+* Select the file, then click on the ``Open selected`` button
+* Click on the ``Add`` button then select the file anywhere from the file-system.
+* If any data import plugin is enabled, an ``Import`` button is also visible, which allows to select a foreign data format and convert it to a compatible :term:`HDF5`. The converted file will be opened.
+
+.. image:: ../art/databases.png
+	:scale: 70%
+
+If a recent file is double-clicked from the list, or selected from the file system using the , it is opened in a new Test Window, in a new tab. 
+The more recently accessed file is placed at the top of the list.
 
 The more convenient way to open a test file is to query the database index.
 
@@ -23,9 +39,11 @@ Database Indexes
 
 They are advanced indexes, collecting all important information about each test (metadata) but not storing any raw dataset. 
 
-They are ephermeral, in the sense that they can be safely removed and recreated identical from the same set of files. They do not hold any unique information about your test. All information is actually saved only into the test files or into the plotting files.
+They are ephermeral, in the sense that they can be safely removed and recreated identical from the same set of files. 
+They do not hold any unique information about your test. All information is actually saved only into the test files or into the plotting files.
 
-There should always be a default database defined at the top of the list. This is the database where finished tests are automatically saved and indexed, configured in :ref:`preferences` under **Default database** option. 
+There should always be a default database defined at the top of the list. 
+This is the database where finished tests are automatically saved and indexed, configured in :ref:`preferences` under **Default database** option. 
 
 If you would like to open a database which is not listed in the ``Recent databases`` column, you can ``Add`` it from the below button, or click on ``File -> Open database`` menu action in the main Browser window.
     

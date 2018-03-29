@@ -71,10 +71,58 @@ The coefficient of expansion is calculated from the ``d`` dataset, the initial d
 #. The Navigator tree is updated. The ``d`` element now has a child: *Coefficient(T,d)*. This is the coefficient of expansion. 
 #. Plot the coefficient dataset using its context menu.
 
-The curve will be referred to a new axis *Coeff(50)*. The number 50 in the label means the coefficient was calculated starting from 50°C. The scale of the axis will be around 10\ :sup:`-6` - 10\ :sup:`-5`. You can rescale the axis to a more comfortable multiplier:
+The curve will be referred to a new axis *Coeff(50)*. The number 50 in the label means the coefficient was calculated starting from 50°C. 
+The scale of the axis will be around 10\ :sup:`-6` - 10\ :sup:`-5`. You can rescale the axis to a more comfortable multiplier:
 
 #. Right-click on the *Coeff(50)* axis. Select **Properties** action. 
 #. Locate the **Scale** entry and set it to 1e6. 
 
 Now the scale of the axis should go from 2.5 to 12.5, where the multiplier is 10\ :sup:`-6`. 
 
+---------------------------------------
+Calibrating with a known standard
+---------------------------------------
+By comparing the measured expansion curve of a standard material with theoretical values, it is possible to calculate a **calibration factor** 
+which can then be applied directly during the measurement. 
+The calibration factor will be multiplied by the observed expansion, acting as a slope correction on the whole expansion curve. 
+
+If the factor is less than one, it means the measured curve of the standard material was higher than the theoretical, so all measurements will be reduced by that number. 
+In case the factor is greater than one, it means the measurement was lower: all subsequent measurements will be increased accordingly.
+
+To execute the calibration tool, open the test in the Browser or Graphics, then:
+
+#. Locate the ``d`` element in the Navigator tree. 
+#. Right-click and select **Calibration**. 
+#. Select the **Calibration standard**, start/end temperature and display options.
+#. Click **Apply** and **Close**. 
+
+When launched through this sequence, the calibration plugin dialog will show pre-filled fields for *Expansion dataset* and *Temperature dataset*:
+
+.. image:: ../art/plugin_calibration.png 
+	:scale: 50 %
+
+Other options include:
+
+- **Calibration Standard** chooser contains a list of materials having certified expansion curves.
+- **First temperature margin** determines the temperature interval to discard from the start of the test. 
+  When the test starts, thermal control might induce imperfections in the heating rate, due to furnace inertia. 
+  This options allows to ignore the initial part of the curve.
+- **Last temperature margin** allows to discard a temperature interval at the end of the test.
+- **Draw calibration label** will create a text label on the currently selected plot page, and output the calibration factor and standard deviation.
+- **Add calibration datasets** will add the theoretical expansion values and a polynomial fit of the measured values to two child datasets. 
+  Those curves can later be plotted.
+- **Start index** allows to skip initial points by index (second) - alternative to *First temperature margin*
+
+Example navigator tree after the creation of calibration datasets:
+
+.. image:: ../art/plugin_calibration_datasets.png 
+	:scale: 50 %
+
+Example calibration plot with calibration label and plotted standard:
+
+.. image:: ../art/plugin_calibration_plot.png 
+	:scale: 50 %
+
+The calibration factor can then be copied from the label and configured in the Settings->Instrument panel under ref:`live_acquisition`. 
+
+This procedure works both on native |m| tests and on imported Misura3 tests.

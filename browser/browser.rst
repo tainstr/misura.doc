@@ -9,6 +9,9 @@
 
 The browser has a tab interface, where the first tab is reserved to Databases, and any  additional tab represents a test file. 
 
+Each test is saved into a single test file in standard :term:`HDF5` file format. 
+Test files and can be indexed into one or more databases to ease up search and organization.
+
 	
 .. toctree::
 	:maxdepth: 2

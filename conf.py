@@ -52,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Misura'
-copyright = u'2017, TA Instruments / Waters LLC'
+copyright = u'2018, TA Instruments / Waters LLC'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -278,7 +278,7 @@ texinfo_documents = [
 epub_title = u'Misura'
 epub_author = u'Daniele Paganelli'
 epub_publisher = u'TA Instruments / Waters LLC'
-epub_copyright = u'2017, TA Instruments / Waters LLC'
+epub_copyright = u'2018, TA Instruments / Waters LLC'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'Misura'
@@ -343,4 +343,5 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'http://docs.python.org/': None}
+intersphinx_mapping = {'python': ('http://docs.python.org/', None),
+}

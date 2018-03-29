@@ -12,11 +12,12 @@
 
 Please always refer to the updated version of this document which can be found online here:
     
-    `<http://misura.readthedocs.org>`_
+    `<http://misura.readthedocs.io>`_
 
 
 .. toctree::
    :maxdepth: 3
+   :caption: Contents:
 
    install
    components

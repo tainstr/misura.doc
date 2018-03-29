@@ -1,6 +1,6 @@
 .. include:: /substitutions.txt
 
-.. components:
+.. _components:
 
 Components and options 
 ======================
@@ -20,7 +20,7 @@ a structured list containing all available options (according to the user's :ref
 
 Components are organized in a hierarchical way, in order to make easier to search for them and to automate some actions on group of related components.
 
-.. options:
+.. _options:
 
 Configuration options 
 -----------------------
@@ -47,12 +47,17 @@ The options's context menu can be visualized by right-clicking on the option's l
 
 * **Units**: Change measurement unit. Only for numerical options defining a number.
 * **Set default value**: resets to factory default.
-* **Check for modifications**: force to read the current value on the instrument's side and refresh. It as the same effect as passing the mouse over the option.
+* **Check for modifications**: (\*) force to read the current value on the instrument's side and refresh. It as the same effect as passing the mouse over the option.
 * **Option info**: opens a dialog where all option's attributes are listed
 * **Detatch**: opens an enlargeable dialog containing the option label and value alone. This can be useful to view more clearly complex options, like tables.
-* **Presets**: lists all values in any saved configuration preset for this component. By clicking on a submenu action, the related value will be applied. 
+* **Presets**: (\*) lists all values in any saved configuration preset for this component. By clicking on a submenu action, the related value will be applied. 
 * **Compare**: list all values for options with the same name in any other component. By clicking on a submenu action, the related value will be applied.
 
+Actions marked with (\*) are available only when connected to a live instrument.
+
+When an option have some sub-options, the *Compare*
+
+.. _panels:
 
 Configuration panel
 -----------------------
@@ -69,3 +74,6 @@ The options listing can be divided up to 3 boxes, one for each option role:
 * **Results**: options which represent the output of a server process - usually read-only. 
 
 Box visibility can be toggled by clicking on the checkbox near the header.
+
+.. image:: ../art/config_sections_collapsed.png
+	:scale: 80%
