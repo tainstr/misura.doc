@@ -12,10 +12,10 @@ If X or Y motors are defined for the camera, motion control sliders are shown ne
 
 .. hint::    
     - :ref:`heating_microscope` has 1 or 2 cameras
-    - :ref:`vertical_dilatometer` and :ref:`horizontal_dilatometer` has 2 cameras
-    - :ref:`relative_fleximeter` has 1 camera
-    - :ref:`absolute_fleximeter` has 3 cameras
-    - :ref:`furnace_instrument` has no cameras
+    - :ref:`vertical_dilatometer` and :ref:`horizontal_dilatometer` have 2 cameras
+    - :ref:`Relative Fleximeter <relative_fleximeter>` has 1 camera
+    - :ref:`Absolute Fleximeter <absolute_fleximeter>` has 3 cameras
+    - :ref:`furnace_instrument` has no camera
 
 Streaming
 ----------------
@@ -51,13 +51,14 @@ Imaging
 ------------------
 Most important digital imaging options are displayed in the camera menu, submenu **Imaging**, as a slider with an associated spinbox. You can either control the slider position or write the desired number in the spinbox and press Enter. 
 
-Available imagin options:
-    * Exposure (should be in range 1-1000)
-    * Contrast 
-    * Brightness 
-    * Gamma (should be minimum possible)
-    * Saturation (should be minimum)
-    * Hue (should be minimum)
+Available imaging options:
+
+- Exposure (should be in range 1-1000)
+- Contrast 
+- Brightness 
+- Gamma (should be minimum possible)
+- Saturation (should be minimum)
+- Hue (should be minimum)
     
 .. hint:: On most models it is advisable to use the spin-box to control the exposure. High values (>1000) might freeze the camera.
 
@@ -67,24 +68,25 @@ Motion Control
 -----------------------
 Camera position can be controlled by up to four motors roles, depending on your instrument's hardware:
     
-    * **X**, lateral
-    * **Y**, vertical
-    * **Angle**, angular 
-    * **Focus**, focus distance, usually shared by (and affecting) all cameras
+- **X**, lateral
+- **Y**, vertical
+- **Angle**, angular 
+- **Focus**, focus distance, usually shared by (and affecting) all cameras
     
 If those motors are available, their movement can be set from the camera menu, submenu **Motion**. 
 
 Each motor role shows an additional submenu called after its name, with those entries:
     
-    * A slider, to control the position.
-    * An **Is moving?** flag: can be unset to block the motor (but cannot be set).
-    * A **Set zero position** action: define any current motor position as the new zero.
-    * A **Configure motor** action: opens the extended configuration panel for the motor.
-    * A **Configure encoder** action: opens the motion-to-image :term:`optical encoder` configuration panel.
+- A slider, to control the position.
+- A *Zoom* checkbox, allowing to zoom in or out from the motion range for fine movements.
+- An **Is moving?** flag: can be unset to block the motor (but cannot be set).
+- A **Set zero position** action: define any current motor position as the new zero.
+- A **Configure motor** action: opens the extended configuration panel for the motor.
+- A **Configure encoder** action: opens the motion-to-image :term:`optical encoder` configuration panel.
 
 Moreover, **X** and **Y** motors are represented directly in the camera controller as a bottom slider (**X**) and a lateral slider on the left (**Y**). A right click on these sliders opens a context menu showing the current position and offering a **Configure** action to open motor configuration panel.
 
-The motion sliders allow to *focus-in* by double-clicking anywhere on them. 
+The motion sliders allow to *focus-in* by double-clicking anywhere on them.
 
 There is a third way to interact with camera positioning: the **motion handle**. It is displayed as a red square in the top-left corner of the image. Dragging and dropping it around the image will cause a motion such that the new position of the top-left corner of the image will correspond to the position where you dropped the square.
 
@@ -119,7 +121,7 @@ Morphometrics
 The **Morphometrics** submenu allows to visualize some of the results obtained from image analysis. 
 The results will be displayed as lines overlaid on the original frames. 
 
-The most useful analysis overlay is the :term:`Regions of Interest`, which can be activated by the **View Regions** action. 
+The most useful analysis overlay is the :term:`Region of Interest`, which can be activated by the **View Regions** action. 
 Each sample defined for the camera will be surrounded by a colored rectangle, representing the area of analysis. 
 This rectangle can be resized by dragging and dropping two hook points on the top-left and bottom-right corners.
     
@@ -131,22 +133,22 @@ Then we have ovalyays, which are realtime visualization of some aspects of the a
 
 Generic overlays:
 
-	* **Grids**: this overlay will draw a grid over each sample. 
-    * **Profile**: the border detected as the sample will be overlaid by a blue line, and the area of the sample with a faded blue.
-    * **Values Label**: a movable label is added. The label will contain lines in the form ``name: value``, where name stays for any sample option and value shows the current value for that option (e.g.: height).
-    * **Pixel Calibration**: the :ref:`pixel_calibration` tool discussed below.
+- **Grids**: this overlay will draw a grid over each sample. 
+- **Profile**: the border detected as the sample will be overlaid by a blue line, and the area of the sample with a faded blue.
+- **Values Label**: a movable label is added. The label will contain lines in the form ``name: value``, where name stays for any sample option and value shows the current value for that option (e.g.: height).
+- **Pixel Calibration**: the :ref:`pixel_calibration` tool discussed below.
      
 :ref:`heating_microscope` overlays:
 
-    * **Points**: relevant profile point are highlighted with circles.
-    * **Base and Height**: (only for :ref:`heating_microscope`) two perpendicular segments starting from the bottom-left starting point of the sample, representing base and height.
-    * **Circle Fitting**: (only for :ref:`heating_microscope`) a circle representing the best circular fitting to the profile.
+- **Points**: relevant profile point are highlighted with circles.
+- **Base and Height**: (only for :ref:`heating_microscope`) two perpendicular segments starting from the bottom-left starting point of the sample, representing base and height.
+- **Circle Fitting**: (only for :ref:`heating_microscope`) a circle representing the best circular fitting to the profile.
 
 :ref:`horizontal_dilatometer`, :ref:`vertical_dilatometer`, :ref:`fleximeter` overlays:
 
-* **Reference line**: position of the sample border at the beginning of the test.
-* **Regression line**: actual detected position of the sample border.
-* **Filtered profile**: profile fragments which were actually included in the calcuation of the regression line, after noise filtering.
+- **Reference line**: position of the sample border at the beginning of the test.
+- **Regression line**: actual detected position of the sample border.
+- **Filtered profile**: profile fragments which were actually included in the calcuation of the regression line, after noise filtering.
 
 
 .. _camera_samples:
@@ -170,10 +172,12 @@ Active samples are shown in the camera menu, as **Sample <N>** menu items where 
 
 Each sub-menu contains these items:
     
-    * **Configure**: opens the sample configuration panel, where image analysis results are stored. From the object tree on the left, it is possible to access to the image analysis option. Some true/false flags are repeated as menu items.
-    * **Balck/white levelling**: convert the grayscale image to black/white. Color levels are accessible from the image analysis configuration panel.
-    * **Adaptive threshold**: convert grayscale image to black/white. Color levels are adaptively calculated point-by-point as a function of neighborhood intensities.
-    * **Dynamic regions**: activate :term:`ROI` auto-follow.
+- **Configure**: opens the sample configuration panel, where image analysis results are stored. 
+  From the object tree on the left, it is possible to access to the image analysis option. Some true/false flags are repeated as menu items.
+- **Balck/white levelling**: convert the grayscale image to black/white. Color levels are accessible from the image analysis configuration panel.
+- **Adaptive threshold**: convert grayscale image to black/white. 
+  Color levels are adaptively calculated point-by-point as a function of neighborhood intensities.
+- **Dynamic regions**: activate :term:`ROI` auto-follow.
 
 .. _camera_advanced:
     
@@ -195,9 +199,9 @@ Troubleshooting
 
 To forcefully restart a camera which is no longer working correctly follow these steps:
     
-    1. Open a camera controller, either from an instrument using it or from the global configuration panel.
-    2. Right click on the camera frame. Select **Configure** action.
-    3. Locate the **Running acquisition** option and set its value to **Stopped**.
-    4. Back to the controller. Ensure the camera is **Streaming** by activating the corresponding context menu option.
-    5. The camera will try to restart itself. On repeated failures, :ref:`server_restart` the server. On continued failure, :ref:`server_reboot` the embedded controller.
+1. Open a camera controller, either from an instrument using it or from the global configuration panel.
+2. Right click on the camera frame. Select **Configure** action.
+3. Locate the **Running acquisition** option and set its value to **Stopped**.
+4. Back to the controller. Ensure the camera is **Streaming** by activating the corresponding context menu option.
+5. The camera will try to restart itself. On repeated failures, :ref:`server_restart` the server. On continued failure, :ref:`server_reboot` the embedded controller.
 

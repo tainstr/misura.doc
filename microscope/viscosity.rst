@@ -37,7 +37,7 @@ Calling the viscosity plugin
 ------------------------------
 It is necessary to open the softening test of the material you are interested in the :ref:`browser`. Then:
 
-1. On the :ref:`nagivator`, locate the ``sample<N>`` node corresponding to your sample (``sample0`` in single tests).
+1. On the :ref:`navigator`, locate the ``sample<N>`` node corresponding to your sample (``sample0`` in single tests).
 2. Right-click on the node to access the context menu. Select viscosity entry.
 
 The viscosity parameters window will open:

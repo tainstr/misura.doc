@@ -1,11 +1,17 @@
 .. include:: ../substitutions.txt
 
-.. _relative-fleximeter:
+.. _fleximeter:
     
-Absolute and Relative Optical Fleximeter
+Absolute Optical Fleximeter
 =========================================
 
-|m| Absolute Optical Fleximeter measures the dimensional changes of materials through patent-pending True Differential, triple-beam technology. 
+.. _absolute_fleximeter:
+
+|m| Absolute Optical Fleximeter measures the dimensional changes of materials through patent-pending True Differential, triple-beam technology.
+
+.. _relative_fleximeter:
+
+The relative fleximeter only uses one camera and needs a calibration curve to be subtracted from the measurement.  
 
 The following sections contain instruction about how to start a test, prepare a sample and analyze test results.
 

@@ -46,6 +46,7 @@ The Horizontal Optical Dilatometer measures changes in length, but cannot measur
 The operator must measure it before starting a test, by using a high precision caliper. 
 
 .. horizontal_stopping:
+
 Stopping the test on excess deformation
 ---------------------------------------
 
