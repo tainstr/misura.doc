@@ -123,6 +123,6 @@ Example calibration plot with calibration label and plotted standard:
 .. image:: ../art/plugin_calibration_plot.png 
 	:scale: 50 %
 
-The calibration factor can then be copied from the label and configured in the Settings->Instrument panel under ref:`live_acquisition`. 
+The calibration factor can then be copied from the label and configured in the :menuselection:`Settings --> Instrument panel` under ref:`live_acquisition`. 
 
 This procedure works both on native |m| tests and on imported Misura3 tests.

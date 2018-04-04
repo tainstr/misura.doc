@@ -27,7 +27,6 @@ The ``Main`` tab contains general configuration options.
 - ``Client Language`` allows to select the interface language
 - ``Remote Server Refresh Rate (ms)`` lets you change the frequency, in milliseconds, 
   of data update from server, if you are connected to a server (in an offline environment, you can ignore this option)
-.. _preferences_defaultDatabase:
 - ``Default Database`` is the location of the default tests database
 - ``Auto-download finished tests``: when connected to a server, this option defines if a test should be downloaded locally or not when it finishes.
 - ``Recent Servers`` is the number of recent servers to be remembered
@@ -36,7 +35,6 @@ The ``Main`` tab contains general configuration options.
 - ``Recent Test Files``: the number of tests to remember in the list of last opened tests
 - ``Recent Misura3 Databases``: the number of |m| 3 databases to remember in the list of last opened |m| 3 databases
 - ``Log files directory``: the location to place log files
-.. _preferences_loggingLevel:
 - ``Logging level``: from 0 to 50, defines the amount of logging (0 -> notheng, 50 -> everything)
 - ``Size of each log file``: the size of a log file, after which, the log file is archived
 - ``Max number og logfiles to be kept``: when the number of log files exeeds this number, the oldest log file is deleted

@@ -46,13 +46,20 @@ They do not hold any unique information about your test. All information is actu
 There should always be a default database defined at the top of the list. 
 This is the database where finished tests are automatically saved and indexed, configured in :ref:`preferences` under **Default database** option. 
 
-If you would like to open a database which is not listed in the ``Recent databases`` column, you can ``Add`` it from the below button, or click on ``File -> Open database`` menu action in the main Browser window.
+If you would like to open a database which is not listed in the ``Recent databases`` column, you can ``Add`` it from the below button, 
+or click on :menuselection:`File --> Open database` menu action in the main Browser window.
     
-You can **create a database index** out of any structure of folders containing some Misura tests (and any other file type, which will be skipped). To create a new database, select the ``File -> New database`` menu action. It will ask the name and location of the database index. The database index must be placed on the topmost folder in your folder structure. After confirmation, the folder where the database index is being created will be scanned as well as any sub-folder, recursively.
+You can **create a database index** out of any structure of folders containing some Misura tests (and any other file type, which will be skipped). 
+To create a new database, select the ``File -> New database`` menu action. It will ask the name and location of the database index. 
+The database index must be placed on the topmost folder in your folder structure. 
+After confirmation, the folder where the database index is being created will be scanned as well as any sub-folder, recursively.
 
-Databases can be located on a network share, to enable multi-user collaboration. Every client which needs to access the output files or the machine can configure it as its **Default database** in :ref:`preferences`, so finished tests are automatically added to that location only once.
+Databases can be located on a network share, to enable multi-user collaboration. 
+Every client which needs to access the output files or the machine can configure it as its **Default database** in :ref:`preferences`, 
+so finished tests are automatically added to that location only once.
         
-This is an easy way to collaborate on data post-processing. It is advisable to save also the plots in the same, shared folder, so any user participating in the network will be able to open them.
+This is an easy way to collaborate on data post-processing. It is advisable to save also the plots in the same, shared folder, 
+so any user participating in the network will be able to open them.
 
         
 .. warning::
@@ -62,7 +69,8 @@ This is an easy way to collaborate on data post-processing. It is advisable to s
 Database Dialog
 ---------------
 
-The interface towards a database is the **Database Dialog**. A new database dialog sub-window will be added to the Data Sources tab every time a database index is opened. 
+The interface towards a database is the **Database Dialog**. A new database dialog sub-window will be added to the Data Sources tab
+ every time a database index is opened. 
 
 It shows a listing with all indexed tests, plus a query line with some filtering options to filter the list. 
 
@@ -85,7 +93,8 @@ Every line listed in the table represents one test. By double-clicking on a line
 
 While cells ``Name`` or ``Column`` are selected, it is possible to press the ``F2`` key to rename the test or edit the comment.
 
-The database dialog can be created also from :ref:`plotting` menu, ``Misura -> Recent databases``. In this case, double-clicking on a test will add its datasets to the active document, and default plots to be created and overimposed to any existing plot.
+The database dialog can be created also from :ref:`plotting` menu, :menuselection:`Misura --> Recent databases`.
+In this case, double-clicking on a test will add its datasets to the active document, and default plots to be created and overimposed to any existing plot.
   
 
 

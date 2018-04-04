@@ -68,9 +68,9 @@ Bug reports and support
 ------------------------
 
 For assistance you can contact Daniele Paganelli, d paganelli at tainstruments .com. 
-  
+
 The **Help** menu of :ref:`browser` and :ref:`live_acquisition` contains a **Bug report** action which will create a zip archive 
-containing useful information for debugging. It is recommended to attach this archive to any support request.
+containing useful information for debugging, :menuselection:`Help --> Bug report`. It is recommended to attach this archive to any support request.
 
 - If the issue involves running a test or controlling an instrument, the bug report should be created from :ref:`live_acquisition` while connected to the machine. 
   In this way also instrument logs will be included.  

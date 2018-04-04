@@ -134,7 +134,7 @@ The point selection can happen either by moving the Snapshot horizontal slider, 
 
 The Snapshots area also displays the temperature value associated to each image. You can add more values by dragging them from the Navigator tree and dropping them in the Snapshots area. To remove unnecessary values, right click on them and de-select from the Labels popup sub-menu.
 
-The default **abscissa** is ``Time (s)``. To change it, right-click anyware in the graph and select **View->By Temperature**. 
+The default **abscissa** is ``Time (s)``. To change it, right-click anyware in the graph and select :menuselection:`View --> By Temperature`. 
 
 ---------------------------------------------------
 Characteristic points on the Data Plot

@@ -45,23 +45,24 @@ Multiple plots can also be saved under the version that generated them and recal
 Versioning allows, for example, to correct the test name, or add a comment, or manually edit characteristic shapes. To save a new version, starting from a file containing only the original data:
 
 #. Do your changes to any configuration option 
-#. Click on ``Measure`` menu -> ``Version`` -> ``New version and plot`` 
+#. Click on menu :menuselection:`Measure --> Version --> New version and plot` 
 #. A dialog box will ask the label of the new version. 
 
 After a new version is created, the ``Version`` menu will show an additional, checked sub-menu below the ``Original`` one. The version submenu allows to:
 
-* ``Load version``: reload the configuration options from the parent version. This menu action is checked in the current version.
-* ``Delete version``: remove the parent version and any associated plot.
-* ``Overwrite version``: overwrite saved configuration. 
-* ``Save new plot``: save current plot as a new plot associated to the current version, with a new name.
+- ``Load version``: reload the configuration options from the parent version. This menu action is checked in the current version.
+- ``Delete version``: remove the parent version and any associated plot.
+- ``Overwrite version``: overwrite saved configuration. 
+- ``Save new plot``: save current plot as a new plot associated to the current version, with a new name.
 
 The ``Original`` version cannot be overwritten nor deleted, and only displays the ``Load version`` action.
 
 Below these version-submenu actions, all associated plots are listed as sub-menu. Each plot-submenu has three entries:
 
-* ``Load plot``: loads the selected plot. If the plot pertain to a version which is not current, the parent version will be loaded instead. The current plot will be deleted and replaced with the loaded one. By hovering the mouse over the load action, a preview of the plot will pop-up.
-* ``Overwrite plot``: overwrite that plot.
-* ``Delete plot``: delete that plot.
+- ``Load plot``: loads the selected plot. If the plot pertain to a version which is not current, the parent version will be loaded instead. 
+   The current plot will be deleted and replaced with the loaded one. By hovering the mouse over the load action, a preview of the plot will pop-up.
+- ``Overwrite plot``: overwrite that plot.
+- ``Delete plot``: delete that plot.
 
 .. image:: /art/version_menu.png
 

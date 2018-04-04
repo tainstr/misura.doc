@@ -25,7 +25,7 @@ An input dialog will let you specify the server protocol, IP, port and path. In 
 
 A username and a password will be prompted, and saved for any future connection to that machine. 
 
-Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, and as **Connect** -> **Server** menu items.
+Saved connections will be displayed both as items in the **Recent servers** box on the welcome page of Live Acquisition, and as :menuselection:`Connect --> Server` menu items.
 
 Client network configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -196,10 +196,11 @@ Interacting with a running test
 
 While the test is running it is possible to perform most of the data visualization and processing operations which are available when accessing to a finished test output file. 
 
-* The :ref:`live_status` tab will update showing relevant options and output values
-* By clicking on menu Measure->Data Plot, you can view a realtime graph of output values which will open in a :ref:`live_plot` subwindow. You can interact with the plot under the Results tab (adding a curve, changing visualization options, etc).
-* By clicking on menu Measure->Data Table, you can inspect all active datasets in a tabular view, which will open in a :ref:`live_table` subwindow.
-* If the instruments records images or sample profiles, the :ref:`storyboard` will be visible.
+- The :ref:`live_status` tab will update showing relevant options and output values
+- By clicking on menu :menuselection:`Measure --> Data Plot`, you can view a realtime graph of output values which will open in a :ref:`live_plot` subwindow. 
+  You can interact with the plot under the Results tab (adding a curve, changing visualization options, etc).
+- By clicking on menu :menuselection:`Measure -->Data Table`, you can inspect all active datasets in a tabular view, which will open in a :ref:`live_table` subwindow.
+- If the instruments records images or sample profiles, the :ref:`storyboard` will be visible.
 
 .. _live_status:
     
@@ -238,7 +239,7 @@ Additionally, the Status panel contains realtime values depending on the current
     
 Data Plot
 ^^^^^^^^^
-The Data Plot is accessible by clicking on menu Measure->Data Plot. It is initialized at the start of the test with a default plot showing the most relevant measured property against time. 
+The Data Plot is accessible by clicking on menu :menuselection:`Measure --> Data Plot`. It is initialized at the start of the test with a default plot showing the most relevant measured property against time. 
 
 The plot can be edited and customized exactly as you would offline using the :ref:`browser` or the :ref:`plotting`. See :ref:`data_plot` for more help.
 
@@ -266,7 +267,7 @@ The *Results* tab contains another series of tabs, which are:
     
 Data Table
 ^^^^^^^^^^
-The Data table is accessible by clicking on menu Measure->Data Table. It displays one column for each :term:`Loaded Dataset`. 
+The Data table is accessible by clicking on menu :menuselection:`Measure --> Data Table`. It displays one column for each :term:`Loaded Dataset`. 
 
 New data points are dynamically added at the end of the table. The table can be exported to ``*.csv`` file format anytime by right-clicking on the header.
 
@@ -279,7 +280,7 @@ The storyboard displays a list of recorded frames or profiles of a sample. The t
 The storyboard is available only when images or profiles are saved in the output file. 
 Frame and profile recording can be configured, before test start, in the **Sample <N>** tabs in Test Configuration panel. 
 
-It is always visible in the Microscope app. If not, it can be accessed by clicking on menu Measure->Storyboard. 
+It is always visible in the Microscope app. If not, it can be accessed by clicking on menu :menuselection:`Measure --> Storyboard`. 
 
 A label below each image reports the temperature value at which the image was recorded (eg: ``T: 321``). 
 More measured values can be displayed by dragging and dropping nodes from the **Results** tab.

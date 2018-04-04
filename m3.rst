@@ -101,7 +101,7 @@ Opening the output file in Graphics app
 #. Browse to the location of your |m3| database, select and open it. 
 #. From the Database Dialog, search for a fleximeter test and its calibration test. Double click on each row in the listing in order to open both. 
 #. Each file will be converted and loaded into Graphics, then displayed as a tree of datasets in **Misura Navigator** right window area. Both datasets ``d`` (displacement) are already plotted in with two different line styles. 
-#. If the **Misura Navigator** area is not visible, you can show/hide it by clicking on menu **Misura** ->**Opened Tests Navigator**.
+#. If the **Misura Navigator** area is not visible, you can show/hide it by clicking on menu :menuselection:`Misura --> Opened Tests Navigator`.
 
 
 Misura :ref:`navigator` is the tree of recorded datasets organized by groups. Each group represents a part of the instrument or of the measurement. 
@@ -128,7 +128,7 @@ visibile.
 The setpoint curve plot is now referred to its own axis labelled *S (°C)*. To better compare temperature and setpoint, it is useful to refer the setpoint plot
 to the temperature axis:
     
-#. Click on the setpoint curve on the plot area window. Visualize the **Properties** area. If it is not visible, click on menu **View**->**Windows**->**Properties window**. 
+#. Click on the setpoint curve on the plot area window. Visualize the **Properties** area. If it is not visible, click on menu :menuselection:`View --> Windows --> Properties window`. 
 #. The Properties area lists all the properties of the plotted curve. Search for the bold **Y axis** entry. 
 #. Change **Y axis** from **ax:S** to **ax:T**. The curve will be immediately referred to the *T (°C)* axis.
 
