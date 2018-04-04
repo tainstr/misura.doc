@@ -65,7 +65,20 @@ editing interactions are simply disabled.
 
 If a numerical option has an associated measurement unit, it will be displayed between the label and the value.
 
+.. _option_group:
 
+Sub-options and groups
+^^^^^^^^^^^^^^^^^^^^^^^
+
+An option can have sub-options, which are hidden by default. Sub-options usually represent fine-tuning aspects of the parent option. 
+
+The presence of sub-options is indicated by a ``+`` symbol on the right of the option itself. 
+When clicked, subordered options will become visible below the main option, and the symbol will turn to ``-`` and produce the opposite effect (hiding sub-options).
+
+Options might be grouped together in a titled box.
+
+.. image:: ../art/sample_geometry.png
+	:scale: 70%
 
 .. _option_menu:
 
