@@ -76,3 +76,5 @@ containing useful information for debugging, :menuselection:`Help --> Bug report
   In this way also instrument logs will be included.  
 - If the issue involves only data processing and visualization, the bug report can be created from the :ref:`browser`.
 - If doubts about measurements are implied, please send also relevant test files.  
+
+It is advisable to set the client bug level filter to 0, so all user interface messages will be logged (``Logging level`` option in :ref:`preferences`).
