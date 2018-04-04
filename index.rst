@@ -33,10 +33,4 @@ Please always refer to the updated version of this document which can be found o
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
