@@ -193,8 +193,8 @@ Additional Test Configurations
 ==============================
 The most relevant configuration options used for the test run and |m3| conversion can be displayed following these steps:
 
-#. From the **Misura Navigator**, locate the root of the tree corresponding to the test you wish like to view. The root node shows the name of the test and a
-(N:) notation, where N is a number >=0.
+#. From the **Misura Navigator**, locate the root of the tree corresponding to the test you wish like to view. 
+   The root node shows the name of the test and a (N:) notation, where N is a number >=0.
 #. Right click on the root node and select **View** from the context menu.
 
 
@@ -211,14 +211,14 @@ The first **Measure** tab contains the list of options regarding the test run.
 
 Detect the following:
     
-* **Name**: Name of the test run, the same the test had in |m3| database.
-* **Comment**: Note about the test, imported from the database.
-* **id**: Path of the |m3| database, followed by a vertical bar and the test id (eg: C:\ess\misura.mdb|00137F)
-* **uid**: Unique id generated during conversion.
-* **Test date**: Date when the test started.
-* **Test duration**: Total test duration in seconds. 
+- **Name**: Name of the test run, the same the test had in |m3| database.
+- **Comment**: Note about the test, imported from the database.
+- **id**: Path of the |m3| database, followed by a vertical bar and the test id (eg: C:\ess\misura.mdb|00137F)
+- **uid**: Unique id generated during conversion.
+- **Test date**: Date when the test started.
+- **Test duration**: Total test duration in seconds. 
     
-    
+
 -------------
 Thermal cycle
 -------------
@@ -235,10 +235,10 @@ Sample data
 
 Most relevant data in the Sample0 tab are:
     
-* **Name**: The same as Measure name.
-* **Comment**: empty label.
-* **Initial dimension**: initial dimension set by the operator.
-* **Initial width**: only applicable to Microscope tests.
+- **Name**: The same as Measure name.
+- **Comment**: empty label.
+- **Initial dimension**: initial dimension set by the operator.
+- **Initial width**: only applicable to Microscope tests.
     
 .. _example Misura3 database: http://dx.doi.org/10.7910/DVN/9LLJLL
             

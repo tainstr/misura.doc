@@ -65,6 +65,7 @@ so any user participating in the network will be able to open them.
 .. warning::
     You might experience problems if a Linux client is accessing a database on a windows share through Samba. You will probably need to disable byte range locks by setting the ``nobrl`` flag when mounting the CIFS filesystem. Example ``/etc/fstab`` entry: ``//192.168.0.1/database /media/database cifs rw,users,nobrl,user=misura,pass=xxxx,exec 0 0``
         
+.. _database_dialog:
 
 Database Dialog
 ---------------
