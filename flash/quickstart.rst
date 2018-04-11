@@ -191,9 +191,9 @@ Viewing the results
 ^^^^^^^^^^^^^^^^^^^^
 
 Model run results are always repeated in two components (or navigator nodes): the model's output and the shot. 
-These are visible as |tcfg| tabs when the :ref:`model_plot` visible.
+These are visible as |tcfg| vertical tabs when the :ref:`model_plot` visible.
 
-
+Both node and shot tabs display an additional, horizontal tab named after the model (eg: :guilabel:`Gembarovic2D`).
 
 Learn more in :ref:`model_results`.
 
