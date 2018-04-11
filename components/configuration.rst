@@ -38,7 +38,7 @@ The options listing can be divided up to 3 boxes, one for each option role:
 
 Box visibility can be toggled by clicking on the checkbox near the header.
 
-.. image:: ../art/config_sections_collapsed.png
+.. image:: ../_static/config_sections_collapsed.png
 	:scale: 80%
 	
 
@@ -77,7 +77,7 @@ When clicked, subordered options will become visible below the main option, and 
 
 Options might be grouped together in a titled box.
 
-.. image:: ../art/sample_geometry.png
+.. image:: ../_static/sample_geometry.png
 	:scale: 70%
 
 .. _option_menu:
@@ -104,7 +104,7 @@ Compare menu
 **Compare** lists all values for options with the same name in any other component on the server or in the test. 
 By clicking on a submenu action, the related value will be applied.
 
-.. image:: ../art/compare_menu.png
+.. image:: ../_static/compare_menu.png
 	:scale: 70%
 
 When an option have some sub-options, a *Compare* menu is also accessible from the ``+``/``-`` symbols used for exploding or collapsing the option group.
@@ -113,7 +113,7 @@ For there, another submenu lists the option values one by one.
 By clicking on an option:value couple you can apply that value to the option in the current group.
 By clicking on **Apply all**, all the values from the referred group will be imported and applied to the current group's options. 
 
-.. image:: ../art/compare_group_menu.png
+.. image:: ../_static/compare_group_menu.png
 	:scale: 70%
 
 .. _option_range_menu:
@@ -121,7 +121,7 @@ By clicking on **Apply all**, all the values from the referred group will be imp
 Range menu
 ~~~~~~~~~~
 
-.. image:: ../art/range_menu.png
+.. image:: ../_static/range_menu.png
 	:scale: 70%
 	
 Numerical options also show a **Range** submenu, containing settings for:
@@ -192,20 +192,20 @@ component ``A`` might define an aggregated ``Temperature`` option which is defin
 
 Aggregated options can be recognized because they offer an additional context-menu submenu: **Aggregation** (see :ref:`option_menu`), containing these options:
 
-.. image:: ../art/aggregation_menu.png
+.. image:: ../_static/aggregation_menu.png
 	:scale: 50%
 
 - **Update**: re-calculate the value of the aggregation.
 - **List aggregated options**: opens a new window showing the values of options involved in the aggregation.
 
-.. image:: ../art/aggregation_dialog.png
+.. image:: ../_static/aggregation_dialog.png
 	:scale: 50%
 
 After a separator, all components involved in the aggregation are listed. 
 Each component opens a sub-menu, with a **View** action, which will open a :ref:`panels` for the aggregated component 
 where the involved option is highlighted in red.
  
-.. image:: ../art/aggregation_highlight.png
+.. image:: ../_static/aggregation_highlight.png
 	:scale: 50%
 	
 A **Navigator** action is also available, giving access to the same actions which could be performed on the component's node if selected in the :ref:`navigator`.

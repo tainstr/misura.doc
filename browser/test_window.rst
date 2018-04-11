@@ -64,5 +64,5 @@ Below these version-submenu actions, all associated plots are listed as sub-menu
 - ``Overwrite plot``: overwrite that plot.
 - ``Delete plot``: delete that plot.
 
-.. image:: /art/version_menu.png
+.. image:: /_static/version_menu.png
 

@@ -98,7 +98,7 @@ To execute the calibration tool, open the test in the Browser or Graphics, then:
 
 When launched through this sequence, the calibration plugin dialog will show pre-filled fields for *Expansion dataset* and *Temperature dataset*:
 
-.. image:: ../art/plugin_calibration.png 
+.. image:: ../_static/plugin_calibration.png 
 	:scale: 50 %
 
 Other options include:
@@ -115,12 +115,12 @@ Other options include:
 
 Example navigator tree after the creation of calibration datasets:
 
-.. image:: ../art/plugin_calibration_datasets.png 
+.. image:: ../_static/plugin_calibration_datasets.png 
 	:scale: 50 %
 
 Example calibration plot with calibration label and plotted standard:
 
-.. image:: ../art/plugin_calibration_plot.png 
+.. image:: ../_static/plugin_calibration_plot.png 
 	:scale: 50 %
 
 The calibration factor can then be copied from the label and configured in the :menuselection:`Settings --> Instrument panel` under ref:`live_acquisition`. 
