@@ -21,7 +21,7 @@ When you first launch Acquisition software, you have to select a server to conne
 
 An input dialog will let you specify the server protocol, IP, port and path. In a normal environment, the server address will be:
 
-    https://172.16.8.68:3880/RPC
+    https://192.100.100.100:3880/RPC
 
 A username and a password will be prompted, and saved for any future connection to that machine. 
 
@@ -36,7 +36,7 @@ As the instrument provides no network auto-configuration, you will be required t
 
 Factory-installed clients usually have this configuration:
 
-* IP: 172.16.8.88
+* IP: 192.100.100.2
 * Netmask: 255.255.255.0
 * Gateway and DNS: None
 
