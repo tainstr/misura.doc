@@ -22,7 +22,7 @@ To open a file from the recent files column, either:
 - If any data import plugin is enabled, an ``Import`` button is also visible, 
   which allows to select a foreign data format and convert it to a compatible :term:`HDF5`. The converted file will be opened.
 
-.. image:: ../_static/databases.png
+.. image:: ../art/databases.png
 	:scale: 70%
 
 If a recent file is double-clicked from the list, or selected from the file system using the , it is opened in a new Test Window, in a new tab. 

@@ -18,7 +18,7 @@ The ``Reload`` button allows you to reload the configuration if, for example, so
 ``Open`` button shows a dialog to locate and load another existing configuration.
 
 
-.. image:: ../_static/preferences.png
+.. image:: ../art/preferences.png
 	:scale: 70%
 
 --------

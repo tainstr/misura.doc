@@ -13,7 +13,7 @@ It is divided in three parts:
 2. The middle area shows general control options and furnace positions before the start or after the end of the test (if the furnace is motorized).
 3. The lower area is usually hidden and can be toggled via **Plot** button above the table. Displays a plot of temperature (red) and heating rate (blue) against forecasted time.
 
-.. image:: /_static/thermal_cycle.png
+.. image:: /art/thermal_cycle.png
 	:scale: 50 %
 
 Editing the thermal cycle table
@@ -220,7 +220,7 @@ Parameters:
 
 Example: up to 500°C, at 10°C/min. Than increase 20°C at 5°C/min and wait 8 minutes, for 7 times.
 
-.. image:: /_static/thermal_cycle_steps.png
+.. image:: /art/thermal_cycle_steps.png
 
 
 Maximize speed
@@ -234,7 +234,7 @@ Parameters:
 
 Example: target temperature = 1600°C produces:
 
-.. image:: /_static/thermal_cycle_maxspeed.png
+.. image:: /art/thermal_cycle_maxspeed.png
 
 
 .. _stopping_conditions:
