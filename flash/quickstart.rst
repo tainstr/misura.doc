@@ -193,27 +193,13 @@ Viewing the results
 Model run results are always repeated in two components (or navigator nodes): the model's output and the shot. 
 These are visible as |tcfg| vertical tabs when the :ref:`model_plot` visible.
 
-Both node and shot tabs display an additional, horizontal tab named after the model (eg: :guilabel:`Gembarovic2D`).
+Both node and shot configuration panels display an additional horizontal tab titled after the model (eg: :guilabel:`Gembarovic2D`), after the :guilabel:`Main` tab.
+
+The :ref:`Main` tab of the shot panel shows an additional field named after the model's diffusivity output.
+
+New model's diffusivity tables are added to the parent segment and to the sample, collecting the only one diffusivity point we calculated. 
 
 Learn more in :ref:`model_results`.
-
-
-Recursive execution
-----------------------
-
-Viewing the results
-^^^^^^^^^^^^^^^^^^^^^
-
-Plotting the results
-^^^^^^^^^^^^^^^^^^^^^^
-
-Saving and reloading your work
----------------------------------
-
-Learn more: :ref:`versioning`.
-
-The next chapters will systematically covert most important aspects of |mf| usage.
-
 
 
 .. |zoomin| image:: _static/veusz-zoom-graph.png
