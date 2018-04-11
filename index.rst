@@ -25,6 +25,7 @@ Please always refer to the updated version of this document which can be found o
    browser/browser.rst
    graphics
    m3
+   flash/flash.rst
    access
    server
    glossary

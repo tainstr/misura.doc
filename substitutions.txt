@@ -11,3 +11,6 @@
 .. |py| replace:: Python\ |trade|
 
 .. |mx| replace:: MorphometriX
+
+.. |fl| replace:: FlashLine
+.. |mf| replace:: |m| Flash
