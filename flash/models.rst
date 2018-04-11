@@ -17,7 +17,7 @@ Right clicking on a node gives access to specific actions, including those relat
 
 Child nodes might represent:
 
-- A :ref:`component<misura:components>`. Samples, segments, shots are componets. 
+- A :ref:`component<components>`. Samples, segments, shots are componets. 
   The component configuration can be accessed via right-click and ``Configure`` action.
 - A dataset, which can be plotted, manipulated and edited.
 
@@ -63,6 +63,11 @@ If parent nodes are clicked, for example a segment node or a sample node, a recu
 Model dialogs contain some common groups of options, which are generally explained in the following sections. 
 Presets or equivalent values from other nodes of the test can be loaded with the mechanism explained in :ref:`option_group`.
 More details are included in each model's section.
+
+The following animation illustrates the process of executing :ref:`model_gembarovic` on a single shot:
+
+.. image:: _static/executing_gembarovic_model_and_plot.gif
+    :scale: 70 %
 
 .. _model_sample_geometry: 
 
@@ -133,7 +138,7 @@ additional knowledge about the material generating the thermogram.
 It is thus advisable not only to set the :ref:`model_start_values` and :ref:`model_flash_geometry` to reasonable values, but also check that parameter's ranges are
 plausible given other material's property.
  
-Ranges are accessible by right-click on the option's label, then **Ranges** submenu, as explained in :ref:`option_menu`. 
+Ranges are accessible by right-click on the option's label, then enter the :ref:`option_range_menu`, and edit minimum/maximum values. 
 
 
 .. _model_minimization: 
@@ -212,7 +217,7 @@ containing all model parameters *and* fitting results.
 .. image:: _static/conf_output_node.png
 	:scale: 50 %
 
-After running an analysis, output results are automatically :ref:`aggregated in result tables <misura:option_aggregate>`.
+After running an analysis, output results are automatically :ref:`aggregated in result tables <option_aggregate>`.
 
 .. _model_refit:
 

@@ -181,11 +181,19 @@ Model plot
 #. Select :menuselection:`Model plot` action.
 #. The model plot will appear in a new document page.
 
+.. image:: _static/plot_model.png 
+    :scale: 50 %
+    
 Learn more in :ref:`model_plot`.
 
 
 Viewing the results
 ^^^^^^^^^^^^^^^^^^^^
+
+Model run results are always repeated in two components (or navigator nodes): the model's output and the shot. 
+These are visible as |tcfg| tabs when the :ref:`model_plot` visible.
+
+
 
 Learn more in :ref:`model_results`.
 

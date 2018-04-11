@@ -231,7 +231,10 @@ The diffusivity method can be changed by setting :ref:`opt_model` to any support
 
 Other summary plots can be created from the navigator, by double-clicking on supported nodes, or right-click and selecting the associated plot action. 
 
-
+The following animation illustrate the process of creating the default plots as hereafter explained:
+ 
+.. image:: _static/default_plots.gif 
+    :scale: 80 %
 
 .. _sample_plot:
 
@@ -276,6 +279,23 @@ In case of model re-run, this model will only partially update. It is preferrabl
 from the :menuselection:`Model Plot` action in the navigator.
 
 
+.. _model_plot_tabs:
+
+Dynamic :guilabel:`Test Configuration` tabs
+------------------------------------------------
+
+As the current plot changes to display data from different samples, segments and shots, 
+the vertical tabs in the :guilabel:`Test Configuration` load relevant component's information.
+
+The default :ref:`summary_plot`, for example, displays diffusivity curves for all samples. 
+The :guilabel:`Test Configuration` accordingly lists one configuration tab for each sample.
+
+A :ref:`sample_plot`, plotting data from one sample and multiple segments, will show both relevant sample's tab, and one tab for each segment.
+
+With the same logic, :ref:`segment_plot` offers the loaded segment tab plus one tab for each shot, 
+and the :ref:`model_plot` both the shot tab and the model output tab where model configuration and results are saved (for example, :guilabel:`gembarovic`). 
+
+
 .. _plots_board:
 
 Plots Board 
@@ -311,6 +331,11 @@ The board also shows three buttons:
 
 - **up** and **down** arrow, to navigate in the hierarchy levels
 - *home*, to reset all selections and display the root level
+
+The following animation illustrates the plots board in action. Notice also as the :ref:`breadcrumbs` updates accordingly.
+
+.. image:: _static/navigating_plotsboard.gif
+	:scale: 90%
 
 .. _breadcrumbs: 
 
