@@ -14,3 +14,5 @@
 
 .. |fl| replace:: FlashLine
 .. |mf| replace:: |m| Flash
+
+.. |tcfg| replace:: :guilabel:`Test Configuration`
