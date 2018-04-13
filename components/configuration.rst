@@ -151,8 +151,9 @@ Also callable from the empty space:
 - **Add row after** or **before**
 - **Delete row** - currently selected or first
 - **Update** values from remote
+- **Copy** selected contents to clipboard, in a text format which is suitable for pasting in third-party applications.
 - **Export** to csv file, which can be imported in third-party applications.
-- **Rotate**: exchange rows with columns. Will not affect underlining data structure nor csv export.
+- **Rotate**: exchange rows with columns. Will not affect underlining data structure nor csv export. Data copied to clipboard will be rotated.
 - **Zoom**: graphically zoom in/out of the table, enlarging or shrinking all fonts and graphical elements
 - **Visible units**: toggle visibility of column header units
 - **More columns**: view previously hidden columns.
